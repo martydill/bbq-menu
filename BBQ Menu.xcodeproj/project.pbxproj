@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4032C2C814D102190035337E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4032C2C714D102190035337E /* UIKit.framework */; };
+		4032C2CA14D102190035337E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4032C2C914D102190035337E /* Foundation.framework */; };
+		4032C2CC14D102190035337E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4032C2CB14D102190035337E /* CoreGraphics.framework */; };
+		4032C2D214D102190035337E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4032C2D014D102190035337E /* InfoPlist.strings */; };
+		4032C2D414D102190035337E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C2D314D102190035337E /* main.m */; };
+		4032C2D814D102190035337E /* BBQMenuAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C2D714D102190035337E /* BBQMenuAppDelegate.m */; };
+		4032C2DB14D102190035337E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4032C2D914D102190035337E /* MainStoryboard_iPhone.storyboard */; };
+		4032C2DE14D102190035337E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4032C2DC14D102190035337E /* MainStoryboard_iPad.storyboard */; };
+		4032C2E114D102190035337E /* BBQMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C2E014D102190035337E /* BBQMenuViewController.m */; };
+		4032C2E914D102190035337E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4032C2E814D102190035337E /* SenTestingKit.framework */; };
+		4032C2EA14D102190035337E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4032C2C714D102190035337E /* UIKit.framework */; };
+		4032C2EB14D102190035337E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4032C2C914D102190035337E /* Foundation.framework */; };
+		4032C2F314D102190035337E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4032C2F114D102190035337E /* InfoPlist.strings */; };
+		4032C2F614D102190035337E /* BBQ_MenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C2F514D102190035337E /* BBQ_MenuTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4032C2EC14D102190035337E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4032C2BA14D102180035337E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4032C2C214D102190035337E;
+			remoteInfo = "BBQ Menu";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4032C2C314D102190035337E /* BBQ Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BBQ Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4032C2C714D102190035337E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4032C2C914D102190035337E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4032C2CB14D102190035337E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4032C2CF14D102190035337E /* BBQ Menu-Info.plist */ = {isa = PBXFileReference; path = "BBQ Menu-Info.plist"; sourceTree = "<group>"; };
+		4032C2D114D102190035337E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4032C2D314D102190035337E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4032C2D514D102190035337E /* BBQ Menu-Prefix.pch */ = {isa = PBXFileReference; path = "BBQ Menu-Prefix.pch"; sourceTree = "<group>"; };
+		4032C2D614D102190035337E /* BBQMenuAppDelegate.h */ = {isa = PBXFileReference; path = BBQMenuAppDelegate.h; sourceTree = "<group>"; };
+		4032C2D714D102190035337E /* BBQMenuAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBQMenuAppDelegate.m; sourceTree = "<group>"; };
+		4032C2DA14D102190035337E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		4032C2DD14D102190035337E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		4032C2DF14D102190035337E /* BBQMenuViewController.h */ = {isa = PBXFileReference; path = BBQMenuViewController.h; sourceTree = "<group>"; };
+		4032C2E014D102190035337E /* BBQMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBQMenuViewController.m; sourceTree = "<group>"; };
+		4032C2E714D102190035337E /* BBQ MenuTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BBQ MenuTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4032C2E814D102190035337E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4032C2F014D102190035337E /* BBQ MenuTests-Info.plist */ = {isa = PBXFileReference; path = "BBQ MenuTests-Info.plist"; sourceTree = "<group>"; };
+		4032C2F214D102190035337E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4032C2F414D102190035337E /* BBQ_MenuTests.h */ = {isa = PBXFileReference; path = BBQ_MenuTests.h; sourceTree = "<group>"; };
+		4032C2F514D102190035337E /* BBQ_MenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBQ_MenuTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4032C2C014D102190035337E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4032C2C814D102190035337E /* UIKit.framework in Frameworks */,
+				4032C2CA14D102190035337E /* Foundation.framework in Frameworks */,
+				4032C2CC14D102190035337E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4032C2E314D102190035337E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4032C2E914D102190035337E /* SenTestingKit.framework in Frameworks */,
+				4032C2EA14D102190035337E /* UIKit.framework in Frameworks */,
+				4032C2EB14D102190035337E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4032C2B814D102180035337E = {
+			isa = PBXGroup;
+			children = (
+				4032C2CD14D102190035337E /* BBQ Menu */,
+				4032C2EE14D102190035337E /* BBQ MenuTests */,
+				4032C2C614D102190035337E /* Frameworks */,
+				4032C2C414D102190035337E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4032C2C414D102190035337E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4032C2C314D102190035337E /* BBQ Menu.app */,
+				4032C2E714D102190035337E /* BBQ MenuTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4032C2C614D102190035337E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4032C2C714D102190035337E /* UIKit.framework */,
+				4032C2C914D102190035337E /* Foundation.framework */,
+				4032C2CB14D102190035337E /* CoreGraphics.framework */,
+				4032C2E814D102190035337E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4032C2CD14D102190035337E /* BBQ Menu */ = {
+			isa = PBXGroup;
+			children = (
+				4032C2D614D102190035337E /* BBQMenuAppDelegate.h */,
+				4032C2D714D102190035337E /* BBQMenuAppDelegate.m */,
+				4032C2D914D102190035337E /* MainStoryboard_iPhone.storyboard */,
+				4032C2DC14D102190035337E /* MainStoryboard_iPad.storyboard */,
+				4032C2DF14D102190035337E /* BBQMenuViewController.h */,
+				4032C2E014D102190035337E /* BBQMenuViewController.m */,
+				4032C2CE14D102190035337E /* Supporting Files */,
+			);
+			path = "BBQ Menu";
+			sourceTree = "<group>";
+		};
+		4032C2CE14D102190035337E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4032C2CF14D102190035337E /* BBQ Menu-Info.plist */,
+				4032C2D014D102190035337E /* InfoPlist.strings */,
+				4032C2D314D102190035337E /* main.m */,
+				4032C2D514D102190035337E /* BBQ Menu-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4032C2EE14D102190035337E /* BBQ MenuTests */ = {
+			isa = PBXGroup;
+			children = (
+				4032C2F414D102190035337E /* BBQ_MenuTests.h */,
+				4032C2F514D102190035337E /* BBQ_MenuTests.m */,
+				4032C2EF14D102190035337E /* Supporting Files */,
+			);
+			path = "BBQ MenuTests";
+			sourceTree = "<group>";
+		};
+		4032C2EF14D102190035337E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4032C2F014D102190035337E /* BBQ MenuTests-Info.plist */,
+				4032C2F114D102190035337E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4032C2C214D102190035337E /* BBQ Menu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4032C2F914D102190035337E /* Build configuration list for PBXNativeTarget "BBQ Menu" */;
+			buildPhases = (
+				4032C2BF14D102190035337E /* Sources */,
+				4032C2C014D102190035337E /* Frameworks */,
+				4032C2C114D102190035337E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BBQ Menu";
+			productName = "BBQ Menu";
+			productReference = 4032C2C314D102190035337E /* BBQ Menu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4032C2E614D102190035337E /* BBQ MenuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4032C2FC14D102190035337E /* Build configuration list for PBXNativeTarget "BBQ MenuTests" */;
+			buildPhases = (
+				4032C2E214D102190035337E /* Sources */,
+				4032C2E314D102190035337E /* Frameworks */,
+				4032C2E414D102190035337E /* Resources */,
+				4032C2E514D102190035337E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4032C2ED14D102190035337E /* PBXTargetDependency */,
+			);
+			name = "BBQ MenuTests";
+			productName = "BBQ MenuTests";
+			productReference = 4032C2E714D102190035337E /* BBQ MenuTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4032C2BA14D102180035337E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 4032C2BD14D102180035337E /* Build configuration list for PBXProject "BBQ Menu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4032C2B814D102180035337E;
+			productRefGroup = 4032C2C414D102190035337E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4032C2C214D102190035337E /* BBQ Menu */,
+				4032C2E614D102190035337E /* BBQ MenuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4032C2C114D102190035337E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4032C2D214D102190035337E /* InfoPlist.strings in Resources */,
+				4032C2DB14D102190035337E /* MainStoryboard_iPhone.storyboard in Resources */,
+				4032C2DE14D102190035337E /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4032C2E414D102190035337E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4032C2F314D102190035337E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4032C2E514D102190035337E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4032C2BF14D102190035337E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4032C2D414D102190035337E /* main.m in Sources */,
+				4032C2D814D102190035337E /* BBQMenuAppDelegate.m in Sources */,
+				4032C2E114D102190035337E /* BBQMenuViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4032C2E214D102190035337E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4032C2F614D102190035337E /* BBQ_MenuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4032C2ED14D102190035337E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4032C2C214D102190035337E /* BBQ Menu */;
+			targetProxy = 4032C2EC14D102190035337E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4032C2D014D102190035337E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4032C2D114D102190035337E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4032C2D914D102190035337E /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4032C2DA14D102190035337E /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		4032C2DC14D102190035337E /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4032C2DD14D102190035337E /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		4032C2F114D102190035337E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4032C2F214D102190035337E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4032C2F714D102190035337E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4032C2F814D102190035337E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4032C2FA14D102190035337E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BBQ Menu/BBQ Menu-Prefix.pch";
+				INFOPLIST_FILE = "BBQ Menu/BBQ Menu-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4032C2FB14D102190035337E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BBQ Menu/BBQ Menu-Prefix.pch";
+				INFOPLIST_FILE = "BBQ Menu/BBQ Menu-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4032C2FD14D102190035337E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BBQ Menu.app/BBQ Menu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BBQ Menu/BBQ Menu-Prefix.pch";
+				INFOPLIST_FILE = "BBQ MenuTests/BBQ MenuTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4032C2FE14D102190035337E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BBQ Menu.app/BBQ Menu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BBQ Menu/BBQ Menu-Prefix.pch";
+				INFOPLIST_FILE = "BBQ MenuTests/BBQ MenuTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4032C2BD14D102180035337E /* Build configuration list for PBXProject "BBQ Menu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4032C2F714D102190035337E /* Debug */,
+				4032C2F814D102190035337E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4032C2F914D102190035337E /* Build configuration list for PBXNativeTarget "BBQ Menu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4032C2FA14D102190035337E /* Debug */,
+				4032C2FB14D102190035337E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4032C2FC14D102190035337E /* Build configuration list for PBXNativeTarget "BBQ MenuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4032C2FD14D102190035337E /* Debug */,
+				4032C2FE14D102190035337E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4032C2BA14D102180035337E /* Project object */;
+}
