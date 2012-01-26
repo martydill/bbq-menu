@@ -14,8 +14,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    UINavigationController *navController = (UINavigationController*)self.window.rootViewController;
+    
+    //MenuTableViewController *menu = [navController.storyboard instantiateViewControllerWithIdentifier:@"MenuTableViewController"];
+    // First item in array is bottom of stack, last item is top.
+    UIViewController* rootController = [navController.storyboard instantiateViewControllerWithIdentifier:@"HomeTableViewController"];
+    navController.viewControllers = [NSArray arrayWithObjects:rootController, nil];
+    
+    [self.window makeKeyAndVisible];
+    
     // Override point for customization after application launch.
     return YES;
+
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

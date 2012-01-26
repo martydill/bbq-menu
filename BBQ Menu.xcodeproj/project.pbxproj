@@ -21,6 +21,13 @@
 		4032C2EB14D102190035337E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4032C2C914D102190035337E /* Foundation.framework */; };
 		4032C2F314D102190035337E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4032C2F114D102190035337E /* InfoPlist.strings */; };
 		4032C2F614D102190035337E /* BBQ_MenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C2F514D102190035337E /* BBQ_MenuTests.m */; };
+		4032C30D14D1047F0035337E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30014D1047F0035337E /* DetailViewController.m */; };
+		4032C30E14D1047F0035337E /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30214D1047F0035337E /* Food.m */; };
+		4032C30F14D1047F0035337E /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30414D1047F0035337E /* HomeTableViewController.m */; };
+		4032C31014D1047F0035337E /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30614D1047F0035337E /* MenuTableViewController.m */; };
+		4032C31114D1047F0035337E /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30814D1047F0035337E /* NavigationViewController.m */; };
+		4032C31214D1047F0035337E /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30A14D1047F0035337E /* SummaryViewController.m */; };
+		4032C31314D1047F0035337E /* TakeOrdersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30C14D1047F0035337E /* TakeOrdersTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,22 +45,36 @@
 		4032C2C714D102190035337E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4032C2C914D102190035337E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4032C2CB14D102190035337E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4032C2CF14D102190035337E /* BBQ Menu-Info.plist */ = {isa = PBXFileReference; path = "BBQ Menu-Info.plist"; sourceTree = "<group>"; };
+		4032C2CF14D102190035337E /* BBQ Menu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BBQ Menu-Info.plist"; sourceTree = "<group>"; };
 		4032C2D114D102190035337E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4032C2D314D102190035337E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4032C2D514D102190035337E /* BBQ Menu-Prefix.pch */ = {isa = PBXFileReference; path = "BBQ Menu-Prefix.pch"; sourceTree = "<group>"; };
-		4032C2D614D102190035337E /* BBQMenuAppDelegate.h */ = {isa = PBXFileReference; path = BBQMenuAppDelegate.h; sourceTree = "<group>"; };
+		4032C2D514D102190035337E /* BBQ Menu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BBQ Menu-Prefix.pch"; sourceTree = "<group>"; };
+		4032C2D614D102190035337E /* BBQMenuAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBQMenuAppDelegate.h; sourceTree = "<group>"; };
 		4032C2D714D102190035337E /* BBQMenuAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBQMenuAppDelegate.m; sourceTree = "<group>"; };
 		4032C2DA14D102190035337E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		4032C2DD14D102190035337E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		4032C2DF14D102190035337E /* BBQMenuViewController.h */ = {isa = PBXFileReference; path = BBQMenuViewController.h; sourceTree = "<group>"; };
+		4032C2DF14D102190035337E /* BBQMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBQMenuViewController.h; sourceTree = "<group>"; };
 		4032C2E014D102190035337E /* BBQMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBQMenuViewController.m; sourceTree = "<group>"; };
 		4032C2E714D102190035337E /* BBQ MenuTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BBQ MenuTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4032C2E814D102190035337E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		4032C2F014D102190035337E /* BBQ MenuTests-Info.plist */ = {isa = PBXFileReference; path = "BBQ MenuTests-Info.plist"; sourceTree = "<group>"; };
+		4032C2F014D102190035337E /* BBQ MenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BBQ MenuTests-Info.plist"; sourceTree = "<group>"; };
 		4032C2F214D102190035337E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4032C2F414D102190035337E /* BBQ_MenuTests.h */ = {isa = PBXFileReference; path = BBQ_MenuTests.h; sourceTree = "<group>"; };
+		4032C2F414D102190035337E /* BBQ_MenuTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBQ_MenuTests.h; sourceTree = "<group>"; };
 		4032C2F514D102190035337E /* BBQ_MenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBQ_MenuTests.m; sourceTree = "<group>"; };
+		4032C2FF14D1047F0035337E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = SOURCE_ROOT; };
+		4032C30014D1047F0035337E /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = SOURCE_ROOT; };
+		4032C30114D1047F0035337E /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = SOURCE_ROOT; };
+		4032C30214D1047F0035337E /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = SOURCE_ROOT; };
+		4032C30314D1047F0035337E /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = SOURCE_ROOT; };
+		4032C30414D1047F0035337E /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = SOURCE_ROOT; };
+		4032C30514D1047F0035337E /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = SOURCE_ROOT; };
+		4032C30614D1047F0035337E /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = SOURCE_ROOT; };
+		4032C30714D1047F0035337E /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = SOURCE_ROOT; };
+		4032C30814D1047F0035337E /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = SOURCE_ROOT; };
+		4032C30914D1047F0035337E /* SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = SOURCE_ROOT; };
+		4032C30A14D1047F0035337E /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = SOURCE_ROOT; };
+		4032C30B14D1047F0035337E /* TakeOrdersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakeOrdersTableViewController.h; sourceTree = SOURCE_ROOT; };
+		4032C30C14D1047F0035337E /* TakeOrdersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeOrdersTableViewController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +134,20 @@
 		4032C2CD14D102190035337E /* BBQ Menu */ = {
 			isa = PBXGroup;
 			children = (
+				4032C2FF14D1047F0035337E /* DetailViewController.h */,
+				4032C30014D1047F0035337E /* DetailViewController.m */,
+				4032C30114D1047F0035337E /* Food.h */,
+				4032C30214D1047F0035337E /* Food.m */,
+				4032C30314D1047F0035337E /* HomeTableViewController.h */,
+				4032C30414D1047F0035337E /* HomeTableViewController.m */,
+				4032C30514D1047F0035337E /* MenuTableViewController.h */,
+				4032C30614D1047F0035337E /* MenuTableViewController.m */,
+				4032C30714D1047F0035337E /* NavigationViewController.h */,
+				4032C30814D1047F0035337E /* NavigationViewController.m */,
+				4032C30914D1047F0035337E /* SummaryViewController.h */,
+				4032C30A14D1047F0035337E /* SummaryViewController.m */,
+				4032C30B14D1047F0035337E /* TakeOrdersTableViewController.h */,
+				4032C30C14D1047F0035337E /* TakeOrdersTableViewController.m */,
 				4032C2D614D102190035337E /* BBQMenuAppDelegate.h */,
 				4032C2D714D102190035337E /* BBQMenuAppDelegate.m */,
 				4032C2D914D102190035337E /* MainStoryboard_iPhone.storyboard */,
@@ -264,6 +299,13 @@
 				4032C2D414D102190035337E /* main.m in Sources */,
 				4032C2D814D102190035337E /* BBQMenuAppDelegate.m in Sources */,
 				4032C2E114D102190035337E /* BBQMenuViewController.m in Sources */,
+				4032C30D14D1047F0035337E /* DetailViewController.m in Sources */,
+				4032C30E14D1047F0035337E /* Food.m in Sources */,
+				4032C30F14D1047F0035337E /* HomeTableViewController.m in Sources */,
+				4032C31014D1047F0035337E /* MenuTableViewController.m in Sources */,
+				4032C31114D1047F0035337E /* NavigationViewController.m in Sources */,
+				4032C31214D1047F0035337E /* SummaryViewController.m in Sources */,
+				4032C31314D1047F0035337E /* TakeOrdersTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
