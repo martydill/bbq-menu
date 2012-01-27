@@ -28,6 +28,7 @@
 		4032C31114D1047F0035337E /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30814D1047F0035337E /* NavigationViewController.m */; };
 		4032C31214D1047F0035337E /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30A14D1047F0035337E /* SummaryViewController.m */; };
 		4032C31314D1047F0035337E /* TakeOrdersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30C14D1047F0035337E /* TakeOrdersTableViewController.m */; };
+		4032C31E14D114610035337E /* SummaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C31D14D114610035337E /* SummaryTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		4032C30A14D1047F0035337E /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = SOURCE_ROOT; };
 		4032C30B14D1047F0035337E /* TakeOrdersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakeOrdersTableViewController.h; sourceTree = SOURCE_ROOT; };
 		4032C30C14D1047F0035337E /* TakeOrdersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeOrdersTableViewController.m; sourceTree = SOURCE_ROOT; };
+		4032C31C14D114600035337E /* SummaryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryTableViewController.h; sourceTree = "<group>"; };
+		4032C31D14D114610035337E /* SummaryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,8 @@
 				4032C2DF14D102190035337E /* BBQMenuViewController.h */,
 				4032C2E014D102190035337E /* BBQMenuViewController.m */,
 				4032C2CE14D102190035337E /* Supporting Files */,
+				4032C31C14D114600035337E /* SummaryTableViewController.h */,
+				4032C31D14D114610035337E /* SummaryTableViewController.m */,
 			);
 			path = "BBQ Menu";
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 				4032C31114D1047F0035337E /* NavigationViewController.m in Sources */,
 				4032C31214D1047F0035337E /* SummaryViewController.m in Sources */,
 				4032C31314D1047F0035337E /* TakeOrdersTableViewController.m in Sources */,
+				4032C31E14D114610035337E /* SummaryTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +491,7 @@
 				4032C2FB14D102190035337E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4032C2FC14D102190035337E /* Build configuration list for PBXNativeTarget "BBQ MenuTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +500,7 @@
 				4032C2FE14D102190035337E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
