@@ -82,8 +82,20 @@
 }
 
 
+-(void)viewWillDisappear:(BOOL)animated
+{
+    if(self.food != nil)
+    {
+        self.food.name = nameTextBox.text;
+        self.food.details = detailsTextBox.text;
+    }
+    
+    [super viewWillDisappear:animated];
+}
+
 - (void)viewDidUnload
 {
+      
     [self setDetailsTextBox:nil];
     [self setNameTextBox:nil];
     [super viewDidUnload];

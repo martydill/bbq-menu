@@ -144,6 +144,8 @@
         }
         detailViewController = Nil;
     }
+
+    [self.tableView reloadData];
 }
 
 
