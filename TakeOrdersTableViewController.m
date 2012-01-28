@@ -213,7 +213,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"FoodCellIdentifier";
     tableView.allowsSelection = NO;
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil)
@@ -230,6 +230,8 @@
         
         [cell.contentView addSubview:countLabel];
     }
+    
+    cell.editingAccessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     Food* food;
     if(isFiltered)

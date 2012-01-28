@@ -116,6 +116,8 @@
     searchBar.delegate = (id)self;
     
     [self setTitle:@"Edit Menu"];
+    
+    [self setEditing:YES animated:YES];
 }
 
 
@@ -213,7 +215,8 @@
     if (cell == nil)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-        
+        [cell addObserver: self forKeyPath: @"showingDeleteConfirmation"
+                  options: NSKeyValueObservingOptionNew context: NULL];
     }
     
     Food* food;
@@ -344,6 +347,24 @@
 //    //DetailViewController* c = [[DetailViewController alloc] init
 //}
 
+
+- (void)observeValueForKeyPath: (NSString *) keyPath ofObject: (id) object
+                        change: (NSDictionary *) change context: (void *) context
+{
+    UITableViewCell * cell = object;
+    if ( [keyPath isEqualToString: @"showingDeleteConfirmation"] )
+    {
+        BOOL isShowing = [[change objectForKey: NSKeyValueChangeNewKey] boolValue];
+        if ( !isShowing )
+    	{
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        }
+    	else
+    	{
+            cell.accessoryType = UITableViewCellAccessoryNone;
+    	}
+    }
+}
 
 
 @end
