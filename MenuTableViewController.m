@@ -228,8 +228,10 @@
     [[cell textLabel] setText:food.name];
     [[cell detailTextLabel] setText: food.details];
     cell.showsReorderControl = true;
+   // cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+   // cell.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
     cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
-    cell.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+    cell.editingAccessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     return cell;
 }
 //
