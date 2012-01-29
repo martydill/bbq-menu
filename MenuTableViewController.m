@@ -94,6 +94,19 @@
     [[self navigationController] popViewControllerAnimated:true];
 }
 
+-(void) Add
+{
+    
+    detailViewController = [self.navigationController.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
+    Food* food = [[Food alloc] init];
+    [detailViewController setFood:food];    
+    
+    // <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc]
+    // ...
+    // Pass the selected object to the new view controller.
+    [self.navigationController pushViewController:detailViewController animated:YES];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -110,6 +123,8 @@
     UIBarButtonItem* addButton = [[UIBarButtonItem alloc] initWithTitle:@"Add" style:UIBarButtonItemStyleBordered target: self action:@selector(Add)];
     [self.navigationItem setRightBarButtonItem:addButton];
       
+   // [addButton addTarget:self action:@selector(showInfo) forControlEvents:UIControlEventTouchUpInside];
+    
     UIView* view = [[UISwitch alloc] initWithFrame:CGRectMake(0, 0, 100, 20)];
     
     [[self.tableView tableFooterView] addSubview:view];

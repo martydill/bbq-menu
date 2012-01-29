@@ -89,15 +89,16 @@
         self.food.name = nameTextBox.text;
         self.food.details = detailsTextBox.text;
     }
-    
+
     [super viewWillDisappear:animated];
 }
 
+
 - (void)viewDidUnload
 {
-      
     [self setDetailsTextBox:nil];
     [self setNameTextBox:nil];
+    [self setDetailsTextBox:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

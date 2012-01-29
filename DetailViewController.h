@@ -13,7 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *nameTextBox;
 
-@property (weak, nonatomic) IBOutlet UITextView *detailsTextBox;
+@property (weak, nonatomic) IBOutlet UITextField *detailsTextBox;
+
 
 @property (strong, nonatomic) Food* food;
 
