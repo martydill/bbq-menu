@@ -24,6 +24,7 @@
         [printString appendString:detailString];
         
         NSString* countString = [NSString stringWithFormat:@"%@", food.count];
+        [printString appendString:countString];
         
         [printString appendString:@"\n"];
     }
