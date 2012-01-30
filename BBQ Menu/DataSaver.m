@@ -20,8 +20,10 @@
         Food* food = [data objectAtIndex:i];
         NSString* nameString = [NSString stringWithFormat:@"%@#",food.name];
         [printString appendString:nameString];
-        NSString* detailString = [NSString stringWithFormat:@"%@", food.details];
+        NSString* detailString = [NSString stringWithFormat:@"%@#", food.details];
         [printString appendString:detailString];
+        
+        NSString* countString = [NSString stringWithFormat:@"%@", food.count];
         
         [printString appendString:@"\n"];
     }
