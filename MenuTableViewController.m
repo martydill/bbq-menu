@@ -11,6 +11,7 @@
 #import "Food.h"
 #import "MobileCoreServices/UTCoreTypes.h"
 #import "DetailViewController.h"
+#import "DataSaver.h"
 
 @implementation MenuTableViewController
 
@@ -156,9 +157,14 @@
         {
             [allTableData addObject:food];
             [self.tableView reloadData];
-        }
+            
+                  }
         detailViewController = Nil;
     }
+    
+    DataSaver* saver = [[DataSaver alloc] init];
+    [saver saveData:allTableData];
+
 
     [self.tableView reloadData];
 }

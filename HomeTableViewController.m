@@ -12,6 +12,7 @@
 #import "TakeOrdersTableViewController.h"
 #import "SummaryViewController.h"
 #import "SummaryTableViewController.h"
+#import "DataSaver.h"
 
 @implementation HomeTableViewController
 
@@ -59,6 +60,7 @@
 {
     [super viewDidLoad];
 
+    
     [self LoadData];
     
     if(allTableData.count == 0)
@@ -98,6 +100,10 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    
+    DataSaver* saver = [[DataSaver alloc] init];
+    [saver saveData:allTableData];
+
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -245,7 +251,7 @@
 {
     NSString* documentsDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
     NSString* filePath = [documentsDirectory stringByAppendingPathComponent:@"fileArray.txt"];
-    NSString* data = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:Nil];
+    NSString* data = 	[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:Nil];
     
     allTableData = [[NSMutableArray alloc] init];
     

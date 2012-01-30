@@ -19,8 +19,10 @@
 @property (strong, nonatomic) Food* food;
 
 - (IBAction)OnOkButtonClick:(id)sender;
+
 - (IBAction)OnCancelButtonClick:(id)sender;
 
 - (BOOL)textFieldShouldReturn:(UITextField *)theTextField;
 
 @end
+	
