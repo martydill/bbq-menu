@@ -323,7 +323,7 @@
 {
     int from = fromIndexPath.row;
     int to = toIndexPath.row;
-    if(isFiltered)
+    if(!isFiltered)
     {
         id object = [allTableData objectAtIndex:from];
         [allTableData removeObjectAtIndex:from];
