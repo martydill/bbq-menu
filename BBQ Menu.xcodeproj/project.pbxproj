@@ -26,7 +26,6 @@
 		4032C30F14D1047F0035337E /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30414D1047F0035337E /* HomeTableViewController.m */; };
 		4032C31014D1047F0035337E /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30614D1047F0035337E /* MenuTableViewController.m */; };
 		4032C31114D1047F0035337E /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30814D1047F0035337E /* NavigationViewController.m */; };
-		4032C31214D1047F0035337E /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30A14D1047F0035337E /* SummaryViewController.m */; };
 		4032C31314D1047F0035337E /* TakeOrdersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30C14D1047F0035337E /* TakeOrdersTableViewController.m */; };
 		4032C31E14D114610035337E /* SummaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C31D14D114610035337E /* SummaryTableViewController.m */; };
 		408464A814D65E5600519018 /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 408464A714D65E5600519018 /* default@2x.png */; };
@@ -80,8 +79,6 @@
 		4032C30614D1047F0035337E /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = SOURCE_ROOT; };
 		4032C30714D1047F0035337E /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = SOURCE_ROOT; };
 		4032C30814D1047F0035337E /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = SOURCE_ROOT; };
-		4032C30914D1047F0035337E /* SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = SOURCE_ROOT; };
-		4032C30A14D1047F0035337E /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = SOURCE_ROOT; };
 		4032C30B14D1047F0035337E /* TakeOrdersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakeOrdersTableViewController.h; sourceTree = SOURCE_ROOT; };
 		4032C30C14D1047F0035337E /* TakeOrdersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeOrdersTableViewController.m; sourceTree = SOURCE_ROOT; };
 		4032C31C14D114600035337E /* SummaryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryTableViewController.h; sourceTree = "<group>"; };
@@ -165,8 +162,6 @@
 				4032C30614D1047F0035337E /* MenuTableViewController.m */,
 				4032C30714D1047F0035337E /* NavigationViewController.h */,
 				4032C30814D1047F0035337E /* NavigationViewController.m */,
-				4032C30914D1047F0035337E /* SummaryViewController.h */,
-				4032C30A14D1047F0035337E /* SummaryViewController.m */,
 				4032C30B14D1047F0035337E /* TakeOrdersTableViewController.h */,
 				4032C30C14D1047F0035337E /* TakeOrdersTableViewController.m */,
 				4032C2D614D102190035337E /* BBQMenuAppDelegate.h */,
@@ -343,7 +338,6 @@
 				4032C30F14D1047F0035337E /* HomeTableViewController.m in Sources */,
 				4032C31014D1047F0035337E /* MenuTableViewController.m in Sources */,
 				4032C31114D1047F0035337E /* NavigationViewController.m in Sources */,
-				4032C31214D1047F0035337E /* SummaryViewController.m in Sources */,
 				4032C31314D1047F0035337E /* TakeOrdersTableViewController.m in Sources */,
 				4032C31E14D114610035337E /* SummaryTableViewController.m in Sources */,
 				40FE707C14D5FD6C00F7095C /* DataSaver.m in Sources */,
@@ -455,10 +449,14 @@
 		4032C2FA14D102190035337E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Martin Dill (992QMAUG8P)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BBQ Menu/BBQ Menu-Prefix.pch";
 				INFOPLIST_FILE = "BBQ Menu/BBQ Menu-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BE37E96A-C6A6-405F-AEBC-7C1528C128B4";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -466,10 +464,14 @@
 		4032C2FB14D102190035337E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Martin Dill (992QMAUG8P)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BBQ Menu/BBQ Menu-Prefix.pch";
 				INFOPLIST_FILE = "BBQ Menu/BBQ Menu-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BE37E96A-C6A6-405F-AEBC-7C1528C128B4";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

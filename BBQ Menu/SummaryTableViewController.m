@@ -8,7 +8,7 @@
 
 #import "SummaryTableViewController.h"
 
-#import "Food.h"
+#import "../Food.h"
 
 @implementation SummaryTableViewController
 
@@ -46,7 +46,7 @@
     NSMutableArray* a = [[NSMutableArray alloc] init ];
     for (Food* food in allTableData)
     {
-        if(food.count > 0)
+        if(food.count.intValue > 0)
         {
             [a addObject:food];
         }

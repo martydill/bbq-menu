@@ -10,7 +10,6 @@
 #import "MenuTableViewController.h"
 #import "Food.h"
 #import "TakeOrdersTableViewController.h"
-#import "SummaryViewController.h"
 #import "SummaryTableViewController.h"
 #import "DataSaver.h"
 #import "DataLoader.h"
