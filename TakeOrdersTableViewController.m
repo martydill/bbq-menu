@@ -221,12 +221,14 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         
         UIStepper *tempSlider = [[UIStepper alloc] init];
-        tempSlider.frame = CGRectMake(220, 10, 100, 10);
+        tempSlider.frame = CGRectMake(215, 8, 100, 10);
         [tempSlider addTarget:self action:@selector(onStepperClick:) forControlEvents:UIControlEventValueChanged];
         [cell.contentView addSubview: tempSlider];
+        tempSlider.maximumValue = 99;
         
         UILabel* countLabel = [[UILabel alloc] init];
-        countLabel.frame = CGRectMake(190, 0, 30, 40);
+        countLabel.frame = CGRectMake(180, 2, 30, 40);
+        countLabel.font = [UIFont boldSystemFontOfSize:20];
         
         [cell.contentView addSubview:countLabel];
     }
