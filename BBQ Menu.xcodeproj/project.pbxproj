@@ -28,13 +28,14 @@
 		4032C31114D1047F0035337E /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30814D1047F0035337E /* NavigationViewController.m */; };
 		4032C31314D1047F0035337E /* TakeOrdersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30C14D1047F0035337E /* TakeOrdersTableViewController.m */; };
 		4032C31E14D114610035337E /* SummaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C31D14D114610035337E /* SummaryTableViewController.m */; };
+		406084CC14D7AA2100587420 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 406084CB14D7AA2100587420 /* Icon.png */; };
 		408464A814D65E5600519018 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 408464A714D65E5600519018 /* Default@2x.png */; };
 		408464AB14D6624500519018 /* DataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 408464AA14D6624500519018 /* DataLoader.m */; };
 		40FE707C14D5FD6C00F7095C /* DataSaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 40FE707B14D5FD6C00F7095C /* DataSaver.m */; };
 		40FE708314D63B6A00F7095C /* bbqmenu-29.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40FE707E14D63B6A00F7095C /* bbqmenu-29.jpg */; };
-		40FE708414D63B6A00F7095C /* bbqmenu-57.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40FE707F14D63B6A00F7095C /* bbqmenu-57.jpg */; };
+		40FE708414D63B6A00F7095C /* bbqmenu-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FE707F14D63B6A00F7095C /* bbqmenu-57.png */; };
 		40FE708514D63B6A00F7095C /* bbqmenu-58.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40FE708014D63B6A00F7095C /* bbqmenu-58.jpg */; };
-		40FE708614D63B6A00F7095C /* bbqmenu-114.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40FE708114D63B6A00F7095C /* bbqmenu-114.jpg */; };
+		40FE708614D63B6A00F7095C /* bbqmenu-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FE708114D63B6A00F7095C /* bbqmenu-114.png */; };
 		40FE708714D63B6A00F7095C /* bbqmenu-512.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40FE708214D63B6A00F7095C /* bbqmenu-512.jpg */; };
 /* End PBXBuildFile section */
 
@@ -83,15 +84,16 @@
 		4032C30C14D1047F0035337E /* TakeOrdersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeOrdersTableViewController.m; sourceTree = SOURCE_ROOT; };
 		4032C31C14D114600035337E /* SummaryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryTableViewController.h; sourceTree = "<group>"; };
 		4032C31D14D114610035337E /* SummaryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryTableViewController.m; sourceTree = "<group>"; };
+		406084CB14D7AA2100587420 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = SOURCE_ROOT; };
 		408464A714D65E5600519018 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		408464A914D6624500519018 /* DataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLoader.h; sourceTree = "<group>"; };
 		408464AA14D6624500519018 /* DataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLoader.m; sourceTree = "<group>"; };
 		40FE707A14D5FD6C00F7095C /* DataSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSaver.h; sourceTree = "<group>"; };
 		40FE707B14D5FD6C00F7095C /* DataSaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSaver.m; sourceTree = "<group>"; };
 		40FE707E14D63B6A00F7095C /* bbqmenu-29.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bbqmenu-29.jpg"; sourceTree = SOURCE_ROOT; };
-		40FE707F14D63B6A00F7095C /* bbqmenu-57.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bbqmenu-57.jpg"; sourceTree = SOURCE_ROOT; };
+		40FE707F14D63B6A00F7095C /* bbqmenu-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bbqmenu-57.png"; sourceTree = SOURCE_ROOT; };
 		40FE708014D63B6A00F7095C /* bbqmenu-58.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bbqmenu-58.jpg"; sourceTree = SOURCE_ROOT; };
-		40FE708114D63B6A00F7095C /* bbqmenu-114.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bbqmenu-114.jpg"; sourceTree = SOURCE_ROOT; };
+		40FE708114D63B6A00F7095C /* bbqmenu-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bbqmenu-114.png"; sourceTree = SOURCE_ROOT; };
 		40FE708214D63B6A00F7095C /* bbqmenu-512.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bbqmenu-512.jpg"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -184,11 +186,12 @@
 		4032C2CE14D102190035337E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				406084CB14D7AA2100587420 /* Icon.png */,
 				408464A714D65E5600519018 /* Default@2x.png */,
 				40FE707E14D63B6A00F7095C /* bbqmenu-29.jpg */,
-				40FE707F14D63B6A00F7095C /* bbqmenu-57.jpg */,
+				40FE707F14D63B6A00F7095C /* bbqmenu-57.png */,
 				40FE708014D63B6A00F7095C /* bbqmenu-58.jpg */,
-				40FE708114D63B6A00F7095C /* bbqmenu-114.jpg */,
+				40FE708114D63B6A00F7095C /* bbqmenu-114.png */,
 				40FE708214D63B6A00F7095C /* bbqmenu-512.jpg */,
 				4032C2CF14D102190035337E /* BBQ Menu-Info.plist */,
 				4032C2D014D102190035337E /* InfoPlist.strings */,
@@ -291,11 +294,12 @@
 				4032C2DB14D102190035337E /* MainStoryboard_iPhone.storyboard in Resources */,
 				4032C2DE14D102190035337E /* MainStoryboard_iPad.storyboard in Resources */,
 				40FE708314D63B6A00F7095C /* bbqmenu-29.jpg in Resources */,
-				40FE708414D63B6A00F7095C /* bbqmenu-57.jpg in Resources */,
+				40FE708414D63B6A00F7095C /* bbqmenu-57.png in Resources */,
 				40FE708514D63B6A00F7095C /* bbqmenu-58.jpg in Resources */,
-				40FE708614D63B6A00F7095C /* bbqmenu-114.jpg in Resources */,
+				40FE708614D63B6A00F7095C /* bbqmenu-114.png in Resources */,
 				40FE708714D63B6A00F7095C /* bbqmenu-512.jpg in Resources */,
 				408464A814D65E5600519018 /* Default@2x.png in Resources */,
+				406084CC14D7AA2100587420 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,13 +468,13 @@
 		4032C2FB14D102190035337E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Martin Dill (992QMAUG8P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BBQ Menu/BBQ Menu-Prefix.pch";
 				INFOPLIST_FILE = "BBQ Menu/BBQ Menu-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BE37E96A-C6A6-405F-AEBC-7C1528C128B4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

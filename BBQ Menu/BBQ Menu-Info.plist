@@ -10,8 +10,8 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFiles</key>
 	<array>
-		<string>bbqmenu-57.jpg</string>
-		<string>bbqmenu-114.jpg</string>
+		<string>bbqmenu-57.png</string>
+		<string>bbqmenu-114.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
 	<string>org.codeninja.bbqmenu</string>
