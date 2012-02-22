@@ -18,7 +18,5 @@
 
 @property (strong, nonatomic) DetailViewController* detailViewController;
 
--(void) Add;
-
 @property (weak, nonatomic) IBOutlet UIStepper *foodCounter;
 @end

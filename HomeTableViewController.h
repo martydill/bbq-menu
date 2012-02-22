@@ -12,12 +12,6 @@
 
 @property (strong, nonatomic) NSMutableArray* allTableData;
 
--(void) SaveData;
-
--(void) LoadData;
-
--(void) LoadDefaultData;
-
 -(void) clear;
 
 @end
