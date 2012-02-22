@@ -20,8 +20,6 @@
 
 -(void) Add;
 
--(void) onStepperClick:(id)sender;
-
 -(void)Back;
 
 @end

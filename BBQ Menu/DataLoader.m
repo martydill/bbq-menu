@@ -43,9 +43,7 @@
 
 -(NSMutableArray*) loadDefaultData
 {
-    NSMutableArray* allTableData = [[NSMutableArray alloc] init];
-    
-    allTableData = [[NSMutableArray alloc] initWithObjects:
+    NSMutableArray* allTableData = [[NSMutableArray alloc] initWithObjects:
                     [[Food alloc] initWithName:@"Chicken" details:@"Breast"],
                     [[Food alloc] initWithName:@"Chicken" details:@"Thigh"],
                     [[Food alloc] initWithName:@"Chicken" details:@"Wing"],

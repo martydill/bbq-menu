@@ -20,7 +20,5 @@
 
 -(void) Add;
 
--(void) onStepperClick:(id)sender;
-
 @property (weak, nonatomic) IBOutlet UIStepper *foodCounter;
 @end
