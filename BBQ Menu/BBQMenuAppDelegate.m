@@ -7,14 +7,70 @@
 //
 
 #import "BBQMenuAppDelegate.h"
+#import <sqlite3.h>
+#import "DataLoader.h"
+#import "SqlDataSaver.h"
+#import "SqlDataLoader.h"
 
 @implementation BBQMenuAppDelegate
 
 @synthesize window = _window;
+@synthesize database;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    UINavigationController *navController = (UINavigationController*)self.window.rootViewController;
+    NSFileManager *fileManager = [NSFileManager defaultManager];//create instance of NSFileManager
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); //create an array and store result of our search for the documents directory in it
+    NSString *documentsDirectory = [paths objectAtIndex:0]; //create NSString object, that holds our exact path to the documents directory
+    
+    NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:@"bbqmenu.sqlite3"];
+    
+  //  if(![fileManager fileExistsAtPath:fullPath])
+    {
+        NSString *sqLiteDb = [[NSBundle mainBundle] pathForResource:@"bbqmenu" 
+                                                             ofType:@"sqlite3"];
+        DLog(@"First run, copying database from resources to documents directory");
+        [fileManager removeItemAtPath:fullPath error:nil];
+        [fileManager copyItemAtPath:sqLiteDb toPath:fullPath error:nil];
+    }
+    //else
+    {
+        DLog(@"Database already exists in documents directory, using it"); 
+    }
+    
+    if (sqlite3_open([fullPath UTF8String], &database) != SQLITE_OK)
+    {
+        DLog(@"Failed to open database!");
+    }
+    else
+    {
+    //    DataLoader* loader = [[DataLoader alloc] init];
+   //     allData = [loader loadRecordsFromDatabase:database];
+    }
+
+    NSString* oldDocumentsDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+    NSString* filePath = [oldDocumentsDirectory stringByAppendingPathComponent:@"fileArray.txt"];
+
+    if([fileManager fileExistsAtPath:filePath])
+    {
+        DLog(@"Importing data from previous version");
+        DataLoader* loader = [[DataLoader alloc] init];
+        
+        NSMutableArray* oldData =  [loader loadData];//[loader loadRecordsFromDatabase:database];
+        
+        int counter = 1;
+        SqlDataSaver* saver = [[SqlDataSaver alloc] init];
+        for (Food* food in oldData)
+        {
+            food.sortOrder = counter;
+            [saver saveRecord:food toDatabase:database];
+            counter++;
+        }
+        
+//        [fileManager removeItemAtPath:filePath error:nil];
+    }
+    
+     UINavigationController *navController = (UINavigationController*)self.window.rootViewController;
     
     //MenuTableViewController *menu = [navController.storyboard instantiateViewControllerWithIdentifier:@"MenuTableViewController"];
     // First item in array is bottom of stack, last item is top.

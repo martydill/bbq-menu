@@ -28,6 +28,10 @@
 		4032C31114D1047F0035337E /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30814D1047F0035337E /* NavigationViewController.m */; };
 		4032C31314D1047F0035337E /* TakeOrdersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30C14D1047F0035337E /* TakeOrdersTableViewController.m */; };
 		4032C31E14D114610035337E /* SummaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C31D14D114610035337E /* SummaryTableViewController.m */; };
+		404AE07114F9577C002F99F8 /* SqlDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 404AE07014F9577C002F99F8 /* SqlDataLoader.m */; };
+		404AE07514F9579C002F99F8 /* SqlDataSaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 404AE07414F9579C002F99F8 /* SqlDataSaver.m */; };
+		404AE07714F95866002F99F8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 404AE07614F95866002F99F8 /* libsqlite3.dylib */; };
+		404AE07914F959F0002F99F8 /* bbqmenu.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 404AE07814F959F0002F99F8 /* bbqmenu.sqlite3 */; };
 		406084CC14D7AA2100587420 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 406084CB14D7AA2100587420 /* Icon.png */; };
 		408464A814D65E5600519018 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 408464A714D65E5600519018 /* Default@2x.png */; };
 		408464AB14D6624500519018 /* DataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 408464AA14D6624500519018 /* DataLoader.m */; };
@@ -84,6 +88,12 @@
 		4032C30C14D1047F0035337E /* TakeOrdersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeOrdersTableViewController.m; sourceTree = SOURCE_ROOT; };
 		4032C31C14D114600035337E /* SummaryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryTableViewController.h; sourceTree = "<group>"; };
 		4032C31D14D114610035337E /* SummaryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryTableViewController.m; sourceTree = "<group>"; };
+		404AE06F14F9577C002F99F8 /* SqlDataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqlDataLoader.h; sourceTree = "<group>"; };
+		404AE07014F9577C002F99F8 /* SqlDataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqlDataLoader.m; sourceTree = "<group>"; };
+		404AE07314F9579C002F99F8 /* SqlDataSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqlDataSaver.h; sourceTree = "<group>"; };
+		404AE07414F9579C002F99F8 /* SqlDataSaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqlDataSaver.m; sourceTree = "<group>"; };
+		404AE07614F95866002F99F8 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		404AE07814F959F0002F99F8 /* bbqmenu.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bbqmenu.sqlite3; sourceTree = SOURCE_ROOT; };
 		406084CB14D7AA2100587420 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = SOURCE_ROOT; };
 		408464A714D65E5600519018 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		408464A914D6624500519018 /* DataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLoader.h; sourceTree = "<group>"; };
@@ -102,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				404AE07714F95866002F99F8 /* libsqlite3.dylib in Frameworks */,
 				4032C2C814D102190035337E /* UIKit.framework in Frameworks */,
 				4032C2CA14D102190035337E /* Foundation.framework in Frameworks */,
 				4032C2CC14D102190035337E /* CoreGraphics.framework in Frameworks */,
@@ -124,6 +135,7 @@
 		4032C2B814D102180035337E = {
 			isa = PBXGroup;
 			children = (
+				404AE07614F95866002F99F8 /* libsqlite3.dylib */,
 				4032C2CD14D102190035337E /* BBQ Menu */,
 				4032C2EE14D102190035337E /* BBQ MenuTests */,
 				4032C2C614D102190035337E /* Frameworks */,
@@ -179,6 +191,10 @@
 				40FE707B14D5FD6C00F7095C /* DataSaver.m */,
 				408464A914D6624500519018 /* DataLoader.h */,
 				408464AA14D6624500519018 /* DataLoader.m */,
+				404AE06F14F9577C002F99F8 /* SqlDataLoader.h */,
+				404AE07014F9577C002F99F8 /* SqlDataLoader.m */,
+				404AE07314F9579C002F99F8 /* SqlDataSaver.h */,
+				404AE07414F9579C002F99F8 /* SqlDataSaver.m */,
 			);
 			path = "BBQ Menu";
 			sourceTree = "<group>";
@@ -186,6 +202,7 @@
 		4032C2CE14D102190035337E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				404AE07814F959F0002F99F8 /* bbqmenu.sqlite3 */,
 				406084CB14D7AA2100587420 /* Icon.png */,
 				408464A714D65E5600519018 /* Default@2x.png */,
 				40FE707E14D63B6A00F7095C /* bbqmenu-29.jpg */,
@@ -300,6 +317,7 @@
 				40FE708714D63B6A00F7095C /* bbqmenu-512.jpg in Resources */,
 				408464A814D65E5600519018 /* Default@2x.png in Resources */,
 				406084CC14D7AA2100587420 /* Icon.png in Resources */,
+				404AE07914F959F0002F99F8 /* bbqmenu.sqlite3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +364,8 @@
 				4032C31E14D114610035337E /* SummaryTableViewController.m in Sources */,
 				40FE707C14D5FD6C00F7095C /* DataSaver.m in Sources */,
 				408464AB14D6624500519018 /* DataLoader.m in Sources */,
+				404AE07114F9577C002F99F8 /* SqlDataLoader.m in Sources */,
+				404AE07514F9579C002F99F8 /* SqlDataSaver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

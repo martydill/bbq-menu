@@ -13,9 +13,13 @@
 #import "SummaryTableViewController.h"
 #import "DataSaver.h"
 #import "DataLoader.h"
+#import "SqlDataLoader.h"
+#import "SqlDataSaver.h"
 
 @implementation HomeTableViewController
 
+@synthesize appDelegate;
+@synthesize database;
 @synthesize allTableData;
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -60,8 +64,14 @@
 {
     [super viewDidLoad];
 
-    DataLoader* loader = [[DataLoader alloc] init];
-    allTableData = [loader loadData];
+    appDelegate = (BBQMenuAppDelegate*)[[UIApplication sharedApplication] delegate];
+    database = appDelegate.database;
+    
+    SqlDataLoader* loader = [[SqlDataLoader alloc] init];
+    allTableData = [loader loadRecordsFromDatabase:database];
+    
+    //DataLoader* loader = [[DataLoader alloc] init];
+    //allTableData = [loader loadData];
     
     [self setTitle:@"BBQ Menu"];
 }

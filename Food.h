@@ -15,5 +15,8 @@
 @property (nonatomic, retain) NSString* name;
 @property (nonatomic, retain) NSString* details;
 @property (nonatomic, retain) NSNumber* count;
+@property (nonatomic, retain) NSString* key;
+@property (nonatomic, assign) bool isNew;
+@property (nonatomic, assign) int sortOrder;
 
 @end

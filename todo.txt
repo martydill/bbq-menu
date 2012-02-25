@@ -1,10 +1,8 @@
-
 Fixed:
 -Long food names cut off the food number in take orders
 -Clear orders button stays blue after you click it, until you click something else
 
-
-
+Todo:
 -Add veggie hot dog to default foods
 -Buttons on the top for filtering - all/meat/veggie
 -Picture for each food and ability to add your own pictures

@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BBQMenuAppDelegate.h"
+#import <sqlite3.h>
 
 @interface HomeTableViewController : UITableViewController
 
 @property (strong, nonatomic) NSMutableArray* allTableData;
+
+@property (nonatomic, assign) sqlite3* database;
+@property (nonatomic, retain) BBQMenuAppDelegate* appDelegate;
 
 -(void) clear;
 
