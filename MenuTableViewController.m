@@ -11,7 +11,7 @@
 #import "Food.h"
 #import "MobileCoreServices/UTCoreTypes.h"
 #import "DetailViewController.h"
-#import "DataSaver.h"
+#import "SqlDataSaver.h"
 
 @implementation MenuTableViewController
 
@@ -157,13 +157,12 @@
         {
             [allTableData addObject:food];
             [self.tableView reloadData];
-            
-                  }
+        }
         detailViewController = Nil;
     }
     
-    DataSaver* saver = [[DataSaver alloc] init];
-    [saver saveData:allTableData];
+  //  DataSaver* saver = [[DataSaver alloc] init];
+  //  [saver saveData:allTableData];
 
 
     [self.tableView reloadData];
@@ -257,31 +256,6 @@
     cell.editingAccessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     return cell;
 }
-//
-//- (void) layoutSubviews {
-//    
-//    // skootch stuff over
-//    if (self.editing && !self.showingDeleteConfirmation) {
-//
-//        CGRect frame = CGRectMake (MARGIN + 4.0, 4.0, 70.0, 46.0);
-//        _profileView.frame = frame;
-//        
-//        frame = CGRectMake (MARGIN + 80.0, 0, 240.0 - MARGIN, 55.0);
-//        _titleLabel.frame = frame;
-//        
-//        // layout normally
-//    } else {
-//        CGRect frame = CGRectMake (4.0, 4.0, 70.0, 46.0);
-//        _profileView.frame = frame;
-//        
-//        frame = CGRectMake (80.0, 0, 240.0, 55.0);
-//        _titleLabel.frame = frame;
-//    }
-//    
-//    [super layoutSubviews];
-//} // layoutSubviews
-//
-
 
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -344,35 +318,6 @@
 
 
 #pragma mark - Table view delegate
-
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    // Navigation logic may go here. Create and push another view controller.
-//        DetailViewController* rootController = [self.navigationController.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
-//    
-//    Food* food;
-//    int row = indexPath.row;
-//    if(isFiltered)
-//    {
-//        food = [filteredTableData objectAtIndex:row];    
-//    }
-//    else
-//    {
-//        food = [allTableData objectAtIndex:row];
-//    }
-//    
-//    rootController.food = food;
-//    
-//    //rootController.food = 
-//    // <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc]
-//     // ...
-//     // Pass the selected object to the new view controller.
-//     [self.navigationController pushViewController:rootController animated:YES];
-//     
-//    //DetailViewController* c = [[DetailViewController alloc] init
-//}
-
-
 - (void)observeValueForKeyPath: (NSString *) keyPath ofObject: (id) object
                         change: (NSDictionary *) change context: (void *) context
 {
@@ -390,6 +335,5 @@
     	}
     }
 }
-
 
 @end

@@ -11,8 +11,6 @@
 #import "Food.h"
 #import "TakeOrdersTableViewController.h"
 #import "SummaryTableViewController.h"
-#import "DataSaver.h"
-#import "DataLoader.h"
 #import "SqlDataLoader.h"
 #import "SqlDataSaver.h"
 
@@ -92,9 +90,8 @@
 {	
     [super viewDidAppear:animated];
     
-    DataSaver* saver = [[DataSaver alloc] init];
-    [saver saveData:allTableData];
-
+  //  DataSaver* saver = [[DataSaver alloc] init];
+  //  [saver saveData:allTableData];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

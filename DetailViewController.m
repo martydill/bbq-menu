@@ -8,6 +8,8 @@
 
 #import "DetailViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "SqlDataSaver.h"
+#import "BBQMenuAppDelegate.h"
 
 @implementation DetailViewController
 
@@ -88,6 +90,11 @@
     {
         self.food.name = nameTextBox.text;
         self.food.details = detailsTextBox.text;
+        
+        BBQMenuAppDelegate*  appDelegate = (BBQMenuAppDelegate*)[[UIApplication sharedApplication] delegate];
+
+        SqlDataSaver* saver = [[SqlDataSaver alloc] init];
+        [saver saveRecord:food toDatabase:appDelegate.database];
     }
 
     [super viewWillDisappear:animated];

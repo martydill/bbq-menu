@@ -15,7 +15,7 @@
 {
     NSMutableArray* allTableData = [[NSMutableArray alloc] init];
     
-    NSString *query = [NSString stringWithFormat:@"SELECT id, name, description, count, sortorder from foods order by sortorder"];
+    NSString *query = [NSString stringWithFormat:@"SELECT id, name, description, count, sortorder from foods"];
     
     sqlite3_stmt *statement;
     if (sqlite3_prepare_v2(database, [query UTF8String], -1, &statement, nil) == SQLITE_OK)
@@ -33,6 +33,7 @@
             NSString *description = [[NSString alloc] initWithUTF8String:descriptionChars];
             
             Food* entry = [[Food alloc] initWithName:name details:description];
+            DLog(@"Loaded food %@-%@ from sql db", entry.name, entry.details);
             entry.count = [NSNumber numberWithInt:count];
             entry.key = keyString;
             entry.sortOrder = sortorder;

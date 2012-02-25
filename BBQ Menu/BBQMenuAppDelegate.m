@@ -11,6 +11,7 @@
 #import "DataLoader.h"
 #import "SqlDataSaver.h"
 #import "SqlDataLoader.h"
+#import "DataSaver.h"
 
 @implementation BBQMenuAppDelegate
 
@@ -25,51 +26,53 @@
     
     NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:@"bbqmenu.sqlite3"];
     
-  //  if(![fileManager fileExistsAtPath:fullPath])
+    if(![fileManager fileExistsAtPath:fullPath])
     {
         NSString *sqLiteDb = [[NSBundle mainBundle] pathForResource:@"bbqmenu" 
                                                              ofType:@"sqlite3"];
         DLog(@"First run, copying database from resources to documents directory");
-        [fileManager removeItemAtPath:fullPath error:nil];
+
         [fileManager copyItemAtPath:sqLiteDb toPath:fullPath error:nil];
-    }
-    //else
-    {
-        DLog(@"Database already exists in documents directory, using it"); 
-    }
-    
-    if (sqlite3_open([fullPath UTF8String], &database) != SQLITE_OK)
-    {
-        DLog(@"Failed to open database!");
+        
+        if (sqlite3_open([fullPath UTF8String], &database) != SQLITE_OK)
+        {
+            DLog(@"Failed to open database!");
+        }
+        
+        NSString* oldDocumentsDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+        NSString* filePath = [oldDocumentsDirectory stringByAppendingPathComponent:@"fileArray.txt"];
+        
+        if([fileManager fileExistsAtPath:filePath])
+        {
+            DLog(@"Importing data from previous version");
+            DataLoader* loader = [[DataLoader alloc] init];
+            
+            NSMutableArray* oldData =  [loader loadData];
+            
+            int counter = 1;
+            SqlDataSaver* saver = [[SqlDataSaver alloc] init];
+            for (Food* food in oldData)
+            {
+                food.sortOrder = counter;
+                [saver saveRecord:food toDatabase:database];
+                DLog(@"Imported %@-%@", food.name, food.details);
+                counter++;
+            }
+           
+            DLog(@"Removing old data file");
+            [fileManager removeItemAtPath:filePath error:nil];
+        }
     }
     else
     {
-    //    DataLoader* loader = [[DataLoader alloc] init];
-   //     allData = [loader loadRecordsFromDatabase:database];
-    }
-
-    NSString* oldDocumentsDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
-    NSString* filePath = [oldDocumentsDirectory stringByAppendingPathComponent:@"fileArray.txt"];
-
-    if([fileManager fileExistsAtPath:filePath])
-    {
-        DLog(@"Importing data from previous version");
-        DataLoader* loader = [[DataLoader alloc] init];
-        
-        NSMutableArray* oldData =  [loader loadData];//[loader loadRecordsFromDatabase:database];
-        
-        int counter = 1;
-        SqlDataSaver* saver = [[SqlDataSaver alloc] init];
-        for (Food* food in oldData)
+        if (sqlite3_open([fullPath UTF8String], &database) != SQLITE_OK)
         {
-            food.sortOrder = counter;
-            [saver saveRecord:food toDatabase:database];
-            counter++;
+            DLog(@"Failed to open database!");
         }
-        
-//        [fileManager removeItemAtPath:filePath error:nil];
+        DLog(@"Database already exists in documents directory, using it"); 
     }
     
+         
      UINavigationController *navController = (UINavigationController*)self.window.rootViewController;
     
     //MenuTableViewController *menu = [navController.storyboard instantiateViewControllerWithIdentifier:@"MenuTableViewController"];
