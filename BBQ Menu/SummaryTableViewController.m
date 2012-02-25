@@ -31,28 +31,39 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+NSMutableDictionary* groups;
+NSArray* sortedKeys;
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setTitle:@"Order Summary"];
+    groups = [[NSMutableDictionary alloc] init];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    NSMutableArray* a = [[NSMutableArray alloc] init ];
     for (Food* food in allTableData)
     {
         if(food.count.intValue > 0)
         {
-            [a addObject:food];
+            if([groups objectForKey:food.name] == nil)
+            {
+                NSMutableArray* arr = [[NSMutableArray alloc] init];
+                [arr addObject:food];
+                [groups setValue:arr forKey:food.name];
+            }
+            else
+            {
+                NSMutableArray* arr = [groups objectForKey:food.name];
+                [arr addObject:food];
+            }
         }
     }
     
-    allTableData = a;
+    sortedKeys =  [[groups allKeys] sortedArrayUsingComparator:^(id obj1, id obj2)
+                   {
+                       return [obj1  caseInsensitiveCompare: obj2]; 
+                   }];
 }
 
 - (void)viewDidUnload
@@ -92,12 +103,13 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return sortedKeys.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return allTableData.count;
+    NSMutableArray* arr = [groups objectForKey:[sortedKeys objectAtIndex:section]];
+    return arr.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -109,9 +121,10 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
+    NSMutableArray* arr = [groups objectForKey:[sortedKeys objectAtIndex:indexPath.section]];
     
     // Configure the cell...
-    Food* food = [allTableData objectAtIndex:indexPath.row];
+    Food* food = [arr objectAtIndex:indexPath.row];
     
     NSString* name;
     if(food.details != nil && [food.details length] > 0)
@@ -119,56 +132,12 @@
     else
          name = [NSString stringWithFormat:@"%d %@", [food.count intValue], food.name, nil];
     [[cell textLabel] setText:name];
-    //[[cell detailTextLabel] setText: food.details];
-    //cell.showsReorderControl = true;
-    //cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
-
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-
 {
-    return @"Order Summary";
+    return [sortedKeys objectAtIndex:section];
 }
 
 #pragma mark - Table view delegate
