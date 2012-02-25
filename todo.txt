@@ -1,15 +1,16 @@
 Fixed:
 -Long food names cut off the food number in take orders
 -Clear orders button stays blue after you click it, until you click something else
+-Add veggie hot dog to default foods
+-Fix things with #s not saving and loading properly
 
 Todo:
--Add veggie hot dog to default foods
+-Add grouping in summary table
 -Buttons on the top for filtering - all/meat/veggie
 -Picture for each food and ability to add your own pictures
 -In order summary, click an item to indicate it has been prepared (i.e. decrement the counter)
 -Order summary cuts off long details
 -summary screen - break in to categories - meat/chicken/veggies
 -Ability to change sort by - quantity, alphabetically, cooking time
--Fix things with #s not saving and loading properly
 -Shake to mark as ordered/done?
 

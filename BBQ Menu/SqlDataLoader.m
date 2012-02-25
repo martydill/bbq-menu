@@ -29,8 +29,8 @@
             int sortorder = sqlite3_column_int(statement, 4);
             
             NSString* keyString = [NSString stringWithCString:key encoding:NSUTF8StringEncoding];
-            NSString *name = [[NSString alloc] initWithUTF8String:nameChars];
-            NSString *description = [[NSString alloc] initWithUTF8String:descriptionChars];
+            NSString *name = nameChars == nil ? @"" : [[NSString alloc] initWithUTF8String:nameChars];
+            NSString *description = descriptionChars == nil ? @"" : [[NSString alloc] initWithUTF8String:descriptionChars];
             
             Food* entry = [[Food alloc] initWithName:name details:description];
             DLog(@"Loaded food %@-%@ from sql db", entry.name, entry.details);

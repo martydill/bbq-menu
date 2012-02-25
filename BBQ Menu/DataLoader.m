@@ -11,7 +11,6 @@
 
 @implementation DataLoader
 
-
 -(NSMutableArray*)loadData
 {
     NSString* documentsDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
@@ -33,43 +32,8 @@
             [allTableData addObject:food];
         }
     }
-    
-    if(allTableData.count == 0)
-        allTableData = [self loadDefaultData];
-    
+       
     return allTableData;
 }
-
-
--(NSMutableArray*) loadDefaultData
-{
-    NSMutableArray* allTableData = [[NSMutableArray alloc] initWithObjects:
-                    [[Food alloc] initWithName:@"Chicken" details:@"Breast"],
-                    [[Food alloc] initWithName:@"Chicken" details:@"Thigh"],
-                    [[Food alloc] initWithName:@"Chicken" details:@"Wing"],
-                    [[Food alloc] initWithName:@"Chicken Burger" details:@""],
-                    [[Food alloc] initWithName:@"Corn on the cob" details:@""],
-                    [[Food alloc] initWithName:@"Hamburger" details:@""],
-                    [[Food alloc] initWithName:@"Hamburger" details:@"With Cheese"],
-                    [[Food alloc] initWithName:@"Hot Dog" details:@""],
-                    [[Food alloc] initWithName:@"Hot Dog" details:@"Turkey"],
-                    [[Food alloc] initWithName:@"Hot Dog" details:@"Chicken"],
-                    [[Food alloc] initWithName:@"Kebab" details:@""],
-                    [[Food alloc] initWithName:@"Pork Chop" details:@""],
-                    [[Food alloc] initWithName:@"Potato" details:@""],
-                    [[Food alloc] initWithName:@"Smokie" details:@""],
-                    [[Food alloc] initWithName:@"Steak" details:@"Rare"],
-                    [[Food alloc] initWithName:@"Steak" details:@"Medium Rare"],
-                    [[Food alloc] initWithName:@"Steak" details:@"Medium"],
-                    [[Food alloc] initWithName:@"Steak" details:@"Medium Well"],
-                    [[Food alloc] initWithName:@"Steak" details:@"Well"],
-                    [[Food alloc] initWithName:@"Turkey Burger" details:@""],  
-                    [[Food alloc] initWithName:@"Veggie Burger" details:@""],
-                    nil];
-    
-    return allTableData;
-}
-
-
 
 @end

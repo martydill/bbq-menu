@@ -35,7 +35,6 @@
 		406084CC14D7AA2100587420 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 406084CB14D7AA2100587420 /* Icon.png */; };
 		408464A814D65E5600519018 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 408464A714D65E5600519018 /* Default@2x.png */; };
 		408464AB14D6624500519018 /* DataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 408464AA14D6624500519018 /* DataLoader.m */; };
-		40FE707C14D5FD6C00F7095C /* DataSaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 40FE707B14D5FD6C00F7095C /* DataSaver.m */; };
 		40FE708314D63B6A00F7095C /* bbqmenu-29.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40FE707E14D63B6A00F7095C /* bbqmenu-29.jpg */; };
 		40FE708414D63B6A00F7095C /* bbqmenu-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FE707F14D63B6A00F7095C /* bbqmenu-57.png */; };
 		40FE708514D63B6A00F7095C /* bbqmenu-58.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40FE708014D63B6A00F7095C /* bbqmenu-58.jpg */; };
@@ -98,8 +97,6 @@
 		408464A714D65E5600519018 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		408464A914D6624500519018 /* DataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLoader.h; sourceTree = "<group>"; };
 		408464AA14D6624500519018 /* DataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLoader.m; sourceTree = "<group>"; };
-		40FE707A14D5FD6C00F7095C /* DataSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSaver.h; sourceTree = "<group>"; };
-		40FE707B14D5FD6C00F7095C /* DataSaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSaver.m; sourceTree = "<group>"; };
 		40FE707E14D63B6A00F7095C /* bbqmenu-29.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bbqmenu-29.jpg"; sourceTree = SOURCE_ROOT; };
 		40FE707F14D63B6A00F7095C /* bbqmenu-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bbqmenu-57.png"; sourceTree = SOURCE_ROOT; };
 		40FE708014D63B6A00F7095C /* bbqmenu-58.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bbqmenu-58.jpg"; sourceTree = SOURCE_ROOT; };
@@ -187,8 +184,6 @@
 				4032C2CE14D102190035337E /* Supporting Files */,
 				4032C31D14D114610035337E /* SummaryTableViewController.m */,
 				4032C31C14D114600035337E /* SummaryTableViewController.h */,
-				40FE707A14D5FD6C00F7095C /* DataSaver.h */,
-				40FE707B14D5FD6C00F7095C /* DataSaver.m */,
 				408464A914D6624500519018 /* DataLoader.h */,
 				408464AA14D6624500519018 /* DataLoader.m */,
 				404AE06F14F9577C002F99F8 /* SqlDataLoader.h */,
@@ -362,7 +357,6 @@
 				4032C31114D1047F0035337E /* NavigationViewController.m in Sources */,
 				4032C31314D1047F0035337E /* TakeOrdersTableViewController.m in Sources */,
 				4032C31E14D114610035337E /* SummaryTableViewController.m in Sources */,
-				40FE707C14D5FD6C00F7095C /* DataSaver.m in Sources */,
 				408464AB14D6624500519018 /* DataLoader.m in Sources */,
 				404AE07114F9577C002F99F8 /* SqlDataLoader.m in Sources */,
 				404AE07514F9579C002F99F8 /* SqlDataSaver.m in Sources */,

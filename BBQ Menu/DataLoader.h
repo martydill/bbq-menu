@@ -12,5 +12,4 @@
 
 -(NSMutableArray*) loadData;
 
--(NSMutableArray*) loadDefaultData;
 @end
