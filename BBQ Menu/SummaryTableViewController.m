@@ -128,7 +128,7 @@ NSArray* sortedKeys;
     
     NSString* name;
     if(food.details != nil && [food.details length] > 0)
-        name = [NSString stringWithFormat:@"%d %@ - %@", [food.count intValue], food.name, food.details, nil];
+        name = [NSString stringWithFormat:@"%d %@", [food.count intValue], food.details, nil];
     else
          name = [NSString stringWithFormat:@"%d %@", [food.count intValue], food.name, nil];
     [[cell textLabel] setText:name];
@@ -137,7 +137,15 @@ NSArray* sortedKeys;
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return [sortedKeys objectAtIndex:section];
+    NSString* header =  [sortedKeys objectAtIndex:section];
+    
+    NSArray* items = [groups objectForKey:header];
+    int count = 0;
+    for (Food* food  in items) {
+        count += food.count.intValue;
+    }
+    
+    return [NSString stringWithFormat:@"%@ - %d", header, count];
 }
 
 #pragma mark - Table view delegate
