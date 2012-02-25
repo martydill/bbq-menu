@@ -33,6 +33,8 @@
 		404AE07714F95866002F99F8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 404AE07614F95866002F99F8 /* libsqlite3.dylib */; };
 		404AE07914F959F0002F99F8 /* bbqmenu.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 404AE07814F959F0002F99F8 /* bbqmenu.sqlite3 */; };
 		404AE07B14F99336002F99F8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 404AE07A14F99336002F99F8 /* Default.png */; };
+		404AE07E14F996E9002F99F8 /* bbqmenu-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 404AE07C14F996E9002F99F8 /* bbqmenu-transparent.png */; };
+		404AE07F14F996E9002F99F8 /* bbqmenu-transparent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 404AE07D14F996E9002F99F8 /* bbqmenu-transparent@2x.png */; };
 		406084CC14D7AA2100587420 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 406084CB14D7AA2100587420 /* Icon.png */; };
 		408464A814D65E5600519018 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 408464A714D65E5600519018 /* Default@2x.png */; };
 		408464AB14D6624500519018 /* DataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 408464AA14D6624500519018 /* DataLoader.m */; };
@@ -95,6 +97,8 @@
 		404AE07614F95866002F99F8 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		404AE07814F959F0002F99F8 /* bbqmenu.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bbqmenu.sqlite3; sourceTree = SOURCE_ROOT; };
 		404AE07A14F99336002F99F8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
+		404AE07C14F996E9002F99F8 /* bbqmenu-transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bbqmenu-transparent.png"; sourceTree = SOURCE_ROOT; };
+		404AE07D14F996E9002F99F8 /* bbqmenu-transparent@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bbqmenu-transparent@2x.png"; sourceTree = SOURCE_ROOT; };
 		406084CB14D7AA2100587420 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = SOURCE_ROOT; };
 		408464A714D65E5600519018 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		408464A914D6624500519018 /* DataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLoader.h; sourceTree = "<group>"; };
@@ -199,6 +203,8 @@
 		4032C2CE14D102190035337E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				404AE07C14F996E9002F99F8 /* bbqmenu-transparent.png */,
+				404AE07D14F996E9002F99F8 /* bbqmenu-transparent@2x.png */,
 				404AE07A14F99336002F99F8 /* Default.png */,
 				404AE07814F959F0002F99F8 /* bbqmenu.sqlite3 */,
 				406084CB14D7AA2100587420 /* Icon.png */,
@@ -317,6 +323,8 @@
 				406084CC14D7AA2100587420 /* Icon.png in Resources */,
 				404AE07914F959F0002F99F8 /* bbqmenu.sqlite3 in Resources */,
 				404AE07B14F99336002F99F8 /* Default.png in Resources */,
+				404AE07E14F996E9002F99F8 /* bbqmenu-transparent.png in Resources */,
+				404AE07F14F996E9002F99F8 /* bbqmenu-transparent@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
