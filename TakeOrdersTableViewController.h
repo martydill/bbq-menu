@@ -16,6 +16,7 @@
 @property (strong, nonatomic) NSMutableArray* filteredTableData;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 
+- (IBAction)OnFoodCountChanged:(id)sender;
 @property (strong, nonatomic) DetailViewController* detailViewController;
 
 @property (weak, nonatomic) IBOutlet UIStepper *foodCounter;

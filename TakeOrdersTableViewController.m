@@ -189,52 +189,12 @@
     return rowCount;
 }
 
-
--(void) onStepperClick:(id) sender
-{
-    UIStepper* stepper = sender;
-    
-    UITableViewCell* cell = (UITableViewCell*)[[stepper superview] superview];
-    
-    UITableView* table = (UITableView *)[cell superview];
-    NSIndexPath* pathOfTheCell = [table indexPathForCell:cell];
-    NSInteger rowOfTheCell = [pathOfTheCell row];
-    
-    Food* food;
-    if(isFiltered)
-        food = [filteredTableData objectAtIndex:rowOfTheCell];
-    else
-        food = [allTableData objectAtIndex:rowOfTheCell];
-    
-    food.count = [NSNumber numberWithInt:(int)stepper.value];	
-    [table reloadData];
-}
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"FoodCellIdentifier";
     tableView.allowsSelection = NO;
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil)
-    {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-        
-        UIStepper *tempSlider = [[UIStepper alloc] init];
-        tempSlider.frame = CGRectMake(215, 8, 100, 10);
-        [tempSlider addTarget:self action:@selector(onStepperClick:) forControlEvents:UIControlEventValueChanged];
-        [cell.contentView addSubview: tempSlider];
-        tempSlider.maximumValue = 99;
-        
-        UILabel* countLabel = [[UILabel alloc] init];
-        countLabel.frame = CGRectMake(180, 2, 30, 40);
-        countLabel.font = [UIFont boldSystemFontOfSize:20];
-        
-        [cell.contentView addSubview:countLabel];
-    }
-    
-    cell.editingAccessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    
+
     Food* food;
     if(isFiltered)
         food = [filteredTableData objectAtIndex:indexPath.row];
@@ -242,14 +202,15 @@
         food = [allTableData objectAtIndex:indexPath.row];
     
     UILabel* label = [[cell.contentView subviews] objectAtIndex:1];
+    UILabel* nameLabel = [[cell.contentView subviews] objectAtIndex:2];
+    UILabel* detailsLabel = [[cell.contentView subviews] objectAtIndex:3];
     UIStepper* stepper = [[cell.contentView subviews] objectAtIndex:0];
     stepper.value = [food.count doubleValue];
     
     [label setText:[NSString stringWithFormat:@"%d", [food.count intValue]]];
-    [[cell textLabel] setText:food.name];
-    [[cell detailTextLabel] setText: food.details];
-    cell.showsReorderControl = true;
-    
+    [nameLabel setText:food.name];
+    [detailsLabel setText:food.details];
+        
     return cell;
 }
 
@@ -287,4 +248,24 @@
      */
 }
 
+- (IBAction)OnFoodCountChanged:(id)sender
+{
+    UIStepper* stepper = sender;
+    
+    UITableViewCell* cell = (UITableViewCell*)[[stepper superview] superview];
+    
+    UITableView* table = (UITableView *)[cell superview];
+    NSIndexPath* pathOfTheCell = [table indexPathForCell:cell];
+    NSInteger rowOfTheCell = [pathOfTheCell row];
+    
+    Food* food;
+    if(isFiltered)
+        food = [filteredTableData objectAtIndex:rowOfTheCell];
+    else
+        food = [allTableData objectAtIndex:rowOfTheCell];
+    
+    food.count = [NSNumber numberWithInt:(int)stepper.value];	
+    [table reloadData];
+
+}
 @end

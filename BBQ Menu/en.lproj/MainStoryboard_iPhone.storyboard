@@ -290,21 +290,28 @@
                                             <rect key="frame" x="211" y="8" width="94" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <connections>
-                                                <action selector="OnFoodCountChanged:" destination="nX5-0Y-rS6" eventType="valueChanged" id="NSc-KJ-gcg"/>
+                                                <action selector="OnFoodCountChanged:" destination="nX5-0Y-rS6" eventType="valueChanged" id="f5u-to-LIc"/>
                                             </connections>
                                         </stepper>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" minimumFontSize="10" id="AKa-tc-Mol">
-                                            <rect key="frame" x="177" y="11" width="26" height="21"/>
+                                            <rect key="frame" x="181" y="11" width="26" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="999" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="p58-44-DfY">
-                                            <rect key="frame" x="10" y="8" width="145" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="999" contentMode="left" text="Label" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" minimumFontSize="10" id="p58-44-DfY">
+                                            <rect key="frame" x="10" y="2" width="163" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" minimumFontSize="10" id="x6O-OD-Ltq">
+                                            <rect key="frame" x="10" y="22" width="163" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.37571252676173233" green="0.44306688876115907" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -334,7 +341,7 @@
             <relationships>
                 <relationship kind="action" name="OnCancelButtonClick:"/>
                 <relationship kind="action" name="OnOkButtonClick:"/>
-                <relationship kind="outlet" name="detailsTextBox" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="detailsTextBox" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="nameTextBox" candidateClass="UITextField"/>
             </relationships>
         </class>
@@ -350,12 +357,10 @@
         <class className="SummaryTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SummaryTableViewController.h"/>
         </class>
-        <class className="SummaryViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SummaryViewController.h"/>
-        </class>
         <class className="TakeOrdersTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TakeOrdersTableViewController.h"/>
             <relationships>
+                <relationship kind="action" name="OnFoodCountChanged:"/>
                 <relationship kind="outlet" name="foodCounter" candidateClass="UIStepper"/>
                 <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
             </relationships>
