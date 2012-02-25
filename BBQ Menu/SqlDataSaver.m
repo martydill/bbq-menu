@@ -68,9 +68,9 @@
         {
             DLog(@"Failed to bind parameter name");
         }
-        if(sqlite3_bind_text(statement, 2, [record.description UTF8String], -1, SQLITE_TRANSIENT) != SQLITE_OK)
+        if(sqlite3_bind_text(statement, 2, [record.details UTF8String], -1, SQLITE_TRANSIENT) != SQLITE_OK)
         {
-            DLog(@"Failed to bind parameter description");
+            DLog(@"Failed to bind parameter details");
         }
         if(sqlite3_bind_int(statement, 3, record.count) != SQLITE_OK)
         {
@@ -136,7 +136,7 @@
         
         if(sqlite3_step(statement) == SQLITE_DONE)
         {
-            DLog(@"Delete successful");
+            DLog(@"Deleted food %@-%@", record.name, record.details);
         }
         else
         {

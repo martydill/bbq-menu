@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "DetailViewController.h"
+#import <sqlite3.h>
+#import "BBQMenuAppDelegate.h"
 
 @interface MenuTableViewController : UITableViewController<UIScrollViewDelegate>
 
@@ -15,6 +17,10 @@
 @property  BOOL isFiltered;
 @property (strong, nonatomic) NSMutableArray* filteredTableData;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+
+@property (nonatomic, assign) sqlite3* database;
+@property (nonatomic, retain) BBQMenuAppDelegate* appDelegate;
+
 
 @property (strong, nonatomic) DetailViewController* detailViewController;
 

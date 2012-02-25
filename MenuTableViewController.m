@@ -20,7 +20,8 @@
 @synthesize detailViewController;
 @synthesize filteredTableData;
 @synthesize isFiltered;
-
+@synthesize appDelegate;
+@synthesize database;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -111,6 +112,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    appDelegate = (BBQMenuAppDelegate*)[[UIApplication sharedApplication] delegate];
+    database = appDelegate.database;
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -279,8 +283,12 @@
         }
         else
         {
+            food = [allTableData objectAtIndex:indexPath.row];
             [allTableData removeObjectAtIndex:indexPath.row];
         }
+        
+        SqlDataSaver* saver = [[SqlDataSaver alloc] init];
+        [saver deleteRecord:food fromDatabase:database];
         
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
@@ -302,6 +310,14 @@
         id object = [allTableData objectAtIndex:from];
         [allTableData removeObjectAtIndex:from];
         [allTableData insertObject:object atIndex:to];
+        
+        SqlDataSaver* saver = [[SqlDataSaver alloc] init];
+        for(int i = 0; i < allTableData.count; ++i)
+        {
+            Food* food = [allTableData objectAtIndex:i];
+            food.sortOrder = i;
+            [saver saveRecord:food toDatabase:database];
+        }
     }
 }
 
