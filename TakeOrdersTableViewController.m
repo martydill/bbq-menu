@@ -97,13 +97,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
+
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:self action:@selector(Back)];
     [self.navigationItem setLeftBarButtonItem:backButton];
        
@@ -265,7 +259,7 @@
         food = [allTableData objectAtIndex:rowOfTheCell];
     
     food.count = [NSNumber numberWithInt:(int)stepper.value];	
-    [table reloadData];
-
+    [table reloadRowsAtIndexPaths:[NSArray arrayWithObject:pathOfTheCell] withRowAnimation:UITableViewRowAnimationNone];
+    food.isModified = true;
 }
 @end

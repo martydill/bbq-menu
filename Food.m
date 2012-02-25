@@ -16,6 +16,7 @@
 @synthesize key;
 @synthesize isNew;
 @synthesize sortOrder;
+@synthesize isModified;
 
 -(id) init
 {

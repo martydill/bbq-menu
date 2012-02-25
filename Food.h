@@ -18,5 +18,6 @@
 @property (nonatomic, retain) NSString* key;
 @property (nonatomic, assign) bool isNew;
 @property (nonatomic, assign) int sortOrder;
+@property (nonatomic, assign) bool isModified;
 
 @end

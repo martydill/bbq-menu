@@ -68,17 +68,12 @@
     SqlDataLoader* loader = [[SqlDataLoader alloc] init];
     allTableData = [loader loadRecordsFromDatabase:database];
     
-    //DataLoader* loader = [[DataLoader alloc] init];
-    //allTableData = [loader loadData];
-    
     [self setTitle:@"BBQ Menu"];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -90,6 +85,16 @@
 {	
     [super viewDidAppear:animated];
     
+    SqlDataSaver* saver = [[SqlDataSaver alloc] init];
+    
+    for(Food* food in allTableData)
+    {
+        if(food.isModified)
+        {
+            food.isModified = false;
+            [saver saveRecord:food toDatabase:database];
+        }
+    }
   //  DataSaver* saver = [[DataSaver alloc] init];
   //  [saver saveData:allTableData];
 }
