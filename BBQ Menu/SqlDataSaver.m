@@ -72,7 +72,7 @@
         {
             DLog(@"Failed to bind parameter details");
         }
-        if(sqlite3_bind_int(statement, 3, record.count) != SQLITE_OK)
+        if(sqlite3_bind_int(statement, 3, record.count.intValue) != SQLITE_OK)
         {
             DLog(@"Failed to bind parameter count");
         }

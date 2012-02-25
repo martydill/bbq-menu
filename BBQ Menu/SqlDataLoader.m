@@ -33,11 +33,11 @@
             NSString *description = descriptionChars == nil ? @"" : [[NSString alloc] initWithUTF8String:descriptionChars];
             
             Food* entry = [[Food alloc] initWithName:name details:description];
-            DLog(@"Loaded food %@-%@ from sql db", entry.name, entry.details);
             entry.count = [NSNumber numberWithInt:count];
             entry.key = keyString;
             entry.sortOrder = sortorder;
             entry.isNew = false;
+            DLog(@"Loaded food %@-%@ (%@) from sql db", entry.name, entry.details, entry.count);
             [allTableData addObject:entry];
         }
         sqlite3_finalize(statement);
