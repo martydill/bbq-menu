@@ -210,7 +210,7 @@
     [label setText:[NSString stringWithFormat:@"%d", [food.count intValue]]];
     [nameLabel setText:food.name];
     [detailsLabel setText:food.details];
-        
+
     return cell;
 }
 

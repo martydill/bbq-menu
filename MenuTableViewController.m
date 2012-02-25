@@ -243,6 +243,12 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
         [cell addObserver: self forKeyPath: @"showingDeleteConfirmation"
                   options: NSKeyValueObservingOptionNew context: NULL];
+        
+        cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+        cell.editingAccessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+        [[cell detailTextLabel] setTextColor:[UIColor colorWithRed:0.375713 green:0.443067 blue:0.666667 alpha:1]];
+        cell.showsReorderControl = true;
+        [[cell detailTextLabel] setFont:[UIFont boldSystemFontOfSize:14]];
     }
     
     Food* food;
@@ -253,11 +259,7 @@
     
     [[cell textLabel] setText:food.name];
     [[cell detailTextLabel] setText: food.details];
-    cell.showsReorderControl = true;
-   // cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
-   // cell.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-    cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
-    cell.editingAccessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+  
     return cell;
 }
 

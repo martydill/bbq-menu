@@ -5,6 +5,7 @@ Fixed:
 -Fix things with #s not saving and loading properly
 
 Todo:
+-Loading screen not appearing correctly for non-retina displays
 -Add grouping in summary table
 -Buttons on the top for filtering - all/meat/veggie
 -Picture for each food and ability to add your own pictures
