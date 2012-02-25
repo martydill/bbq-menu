@@ -98,9 +98,9 @@
 
 -(void) Add
 {
-    
     detailViewController = [self.navigationController.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
     Food* food = [[Food alloc] init];
+    food.sortOrder = [allTableData count] + 1;
     [detailViewController setFood:food];    
     
     // <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc]
