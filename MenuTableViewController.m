@@ -100,11 +100,18 @@
 {
     detailViewController = [self.navigationController.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
     Food* food = [[Food alloc] init];
-    food.sortOrder = [allTableData count] + 1;
-    [detailViewController setFood:food];    
+    if(allTableData.count > 0)
+    {
+        Food* lastFood = [allTableData objectAtIndex:allTableData.count - 1];
+        food.sortOrder = lastFood.sortOrder + 10;
+    }
+    else
+    {
+        food.sortOrder = 10;
+    }
     
-    // <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc]
-    // ...
+    [detailViewController setFood:food];    
+   
     // Pass the selected object to the new view controller.
     [self.navigationController pushViewController:detailViewController animated:YES];
 }
@@ -317,7 +324,7 @@
         for(int i = 0; i < allTableData.count; ++i)
         {
             Food* food = [allTableData objectAtIndex:i];
-            food.sortOrder = i;
+            food.sortOrder = (i + 1) * 10;
             [saver saveRecord:food toDatabase:database];
         }
     }
