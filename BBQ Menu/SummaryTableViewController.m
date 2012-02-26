@@ -39,7 +39,7 @@ NSArray* sortedKeys;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setTitle:@"Order Summary"];
+    [self setTitle:@"Summary"];
     groups = [[NSMutableDictionary alloc] init];
 
     for (Food* food in allTableData)
