@@ -5,12 +5,12 @@ Fixed:
 -Fix things with #s not saving and loading properly
 -Loading screen not appearing correctly for non-retina displays
 -Add grouping in summary table
+-Order summary cuts off long details
 
 Todo:
 -Buttons on the top for filtering - all/meat/veggie
 -Picture for each food and ability to add your own pictures
 -In order summary, click an item to indicate it has been prepared (i.e. decrement the counter)
--Order summary cuts off long details
 -summary screen - break in to categories - meat/chicken/veggies
 -Ability to change sort by - quantity, alphabetically, cooking time
 -Shake to mark as ordered/done?
