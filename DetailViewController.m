@@ -71,6 +71,7 @@
 {
     [super viewDidLoad];
     
+    [self.view setBackgroundColor:[UIColor groupTableViewBackgroundColor]];
     nameTextBox.delegate = self;
     detailsTextBox.delegate = self;
     
