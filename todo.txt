@@ -6,6 +6,7 @@ Fixed:
 -Loading screen not appearing correctly for non-retina displays
 -Add grouping in summary table
 -Order summary cuts off long details
+-Fixed application not launching properly on ipad
 
 Todo:
 -Buttons on the top for filtering - all/meat/veggie

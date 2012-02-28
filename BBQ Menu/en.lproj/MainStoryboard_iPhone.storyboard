@@ -12,16 +12,19 @@
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="1uY-2f-R9n">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="yGM-r7-UKv" kind="relationship" relationship="rootViewController" id="WIN-Ct-3De"/>
+                    </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="347" y="-149"/>
+            <point key="canvasLocation" x="283" y="-105"/>
         </scene>
         <scene sceneID="hNi-gQ-qu1">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12z-zl-XGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="HomeTableViewController" id="yGM-r7-UKv" customClass="HomeTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="LNp-gE-Iqy">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="bbqmenu-transparent@2x.png" id="N6S-Xc-YQT">
@@ -132,6 +135,7 @@
                             <outlet property="delegate" destination="yGM-r7-UKv" id="KZy-kW-ezF"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="C9F-Af-YXJ"/>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="915" y="-135"/>
@@ -141,7 +145,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GFQ-rR-Yqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController title="View Summary" id="uCS-U3-p2C" customClass="SummaryTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="B6Q-lD-6Fb">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
@@ -184,7 +188,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXZ-r5-a7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="MenuTableViewController" id="nTb-rz-HbU" customClass="MenuTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8qx-TT-d3l">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="2tk-1Q-ncT">
@@ -272,7 +276,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rzn-gM-NaX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="TakeOrdersTableViewController" title="Take Orders" id="nX5-0Y-rS6" customClass="TakeOrdersTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="OxN-wD-47Y">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="e6s-rb-Ck0">
