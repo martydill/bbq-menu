@@ -15,6 +15,7 @@
 		<string>Default-Portrait~ipad.png</string>
 		<string>Default-Portrait@2x~ipad.png</string>
 		<string>Default-Portrait@2x~ipad.png</string>
+		<string>bbqmenu-72.png</string>
 	</array>
 	<key>CFBundleIcons</key>
 	<dict>
@@ -27,6 +28,7 @@
 				<string>Default-Portrait~ipad.png</string>
 				<string>Default-Portrait@2x~ipad.png</string>
 				<string>Default-Portrait@2x~ipad.png</string>
+				<string>bbqmenu-72.png</string>
 			</array>
 		</dict>
 	</dict>

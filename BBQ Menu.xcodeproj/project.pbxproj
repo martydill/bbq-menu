@@ -49,6 +49,8 @@
 		CE5C18531537EB4F006E7398 /* cutlery_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5C18511537EB4F006E7398 /* cutlery_ipad.png */; };
 		CE5C18581537F13F006E7398 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5C18571537F13F006E7398 /* Default-Portrait~ipad.png */; };
 		CE5C185A1537F149006E7398 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5C18591537F149006E7398 /* Default-Portrait@2x~ipad.png */; };
+		CE8CF1491537FCC300A22E4D /* bbqmenu-72.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8CF1471537FCC300A22E4D /* bbqmenu-72.png */; };
+		CE8CF14A1537FCC300A22E4D /* bbqmenu-144.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8CF1481537FCC300A22E4D /* bbqmenu-144.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +122,8 @@
 		CE5C18511537EB4F006E7398 /* cutlery_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cutlery_ipad.png; sourceTree = SOURCE_ROOT; };
 		CE5C18571537F13F006E7398 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		CE5C18591537F149006E7398 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		CE8CF1471537FCC300A22E4D /* bbqmenu-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bbqmenu-72.png"; sourceTree = SOURCE_ROOT; };
+		CE8CF1481537FCC300A22E4D /* bbqmenu-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bbqmenu-144.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +221,8 @@
 		4032C2CE14D102190035337E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE8CF1471537FCC300A22E4D /* bbqmenu-72.png */,
+				CE8CF1481537FCC300A22E4D /* bbqmenu-144.png */,
 				CE5C18501537EB4F006E7398 /* bbqmenu-transparent-ipad.png */,
 				CE5C18511537EB4F006E7398 /* cutlery_ipad.png */,
 				404AE08014FA0178002F99F8 /* cutlery.png */,
@@ -349,6 +355,8 @@
 				CE5C18531537EB4F006E7398 /* cutlery_ipad.png in Resources */,
 				CE5C18581537F13F006E7398 /* Default-Portrait~ipad.png in Resources */,
 				CE5C185A1537F149006E7398 /* Default-Portrait@2x~ipad.png in Resources */,
+				CE8CF1491537FCC300A22E4D /* bbqmenu-72.png in Resources */,
+				CE8CF14A1537FCC300A22E4D /* bbqmenu-144.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
