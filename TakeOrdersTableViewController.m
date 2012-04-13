@@ -1,4 +1,4 @@
-//
+k//
 //  ThingViewController.m
 //  BBQMEnu
 //
@@ -78,7 +78,7 @@
         for (Food* food in allTableData)
         {
             NSRange nameRange = [food.name rangeOfString:text options:NSCaseInsensitiveSearch];
-            NSRange descriptionRange = [food.description rangeOfString:text options:NSCaseInsensitiveSearch];
+            NSRange descriptionRange = [food.details rangeOfString:text options:NSCaseInsensitiveSearch];
             if(nameRange.location != NSNotFound || descriptionRange.location != NSNotFound)
             {
                 [filteredTableData addObject:food];

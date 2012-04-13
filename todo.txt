@@ -1,3 +1,10 @@
+1.2:
+-Added iPad support!
+-Fixed being able to select rows in the menu summary view
+-Fixed search not searching the details field 
+
+1.1:
+
 Fixed:
 -Long food names cut off the food number in take orders
 -Clear orders button stays blue after you click it, until you click something else
