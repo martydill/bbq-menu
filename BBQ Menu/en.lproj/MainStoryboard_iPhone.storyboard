@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11C74" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="KBa-bY-k0q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="KBa-bY-k0q">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
         <scene sceneID="XoD-0x-RH3">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gov-Vp-40Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -19,6 +21,7 @@
             </objects>
             <point key="canvasLocation" x="283" y="-105"/>
         </scene>
+        <!--Home Table View Controller-->
         <scene sceneID="hNi-gQ-qu1">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12z-zl-XGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -60,7 +63,7 @@
                                         <rect key="frame" x="0.0" y="100" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="View Summary" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="HzP-qS-d8l">
@@ -140,11 +143,12 @@
             </objects>
             <point key="canvasLocation" x="915" y="-135"/>
         </scene>
+        <!--Summary Table View Controller - View Summary-->
         <scene sceneID="J9Y-1H-NEi">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GFQ-rR-Yqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController title="View Summary" id="uCS-U3-p2C" customClass="SummaryTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="B6Q-lD-6Fb">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="B6Q-lD-6Fb">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -169,6 +173,7 @@
             </objects>
             <point key="canvasLocation" x="1533" y="-140"/>
         </scene>
+        <!--Summary View Controller-->
         <scene sceneID="IEj-ZO-tyZ">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eMF-P0-g6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -183,6 +188,7 @@
             </objects>
             <point key="canvasLocation" x="797" y="450"/>
         </scene>
+        <!--Menu Table View Controller-->
         <scene sceneID="BiF-Nn-3Vy">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXZ-r5-a7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -222,6 +228,7 @@
             </objects>
             <point key="canvasLocation" x="1549" y="563"/>
         </scene>
+        <!--Detail View Controller-->
         <scene sceneID="Pjr-CR-Qka">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sop-2b-Dz2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -271,6 +278,7 @@
             </objects>
             <point key="canvasLocation" x="2191" y="-261"/>
         </scene>
+        <!--Take Orders Table View Controller - Take Orders-->
         <scene sceneID="QyR-wq-G4C">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rzn-gM-NaX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -306,14 +314,14 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="999" contentMode="left" text="Label" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" minimumFontSize="10" id="p58-44-DfY">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="999" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="p58-44-DfY">
                                             <rect key="frame" x="10" y="2" width="163" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" minimumFontSize="10" id="x6O-OD-Ltq">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="x6O-OD-Ltq">
                                             <rect key="frame" x="10" y="22" width="163" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
