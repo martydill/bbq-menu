@@ -255,7 +255,8 @@
         cell.editingAccessoryType = UITableViewCellAccessoryDetailDisclosureButton;
         [[cell detailTextLabel] setTextColor:[UIColor colorWithRed:0.375713 green:0.443067 blue:0.666667 alpha:1]];
         cell.showsReorderControl = true;
-        [[cell detailTextLabel] setFont:[UIFont boldSystemFontOfSize:14]];
+        [[cell detailTextLabel] setFont:[UIFont boldSystemFontOfSize:22]];
+        [[cell textLabel] setFont:[UIFont boldSystemFontOfSize:28]];
     }
     
     Food* food;
