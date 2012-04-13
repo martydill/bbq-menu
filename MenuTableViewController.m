@@ -240,6 +240,16 @@
     [self.navigationController pushViewController:rootController animated:YES];
 }
 
+-(BOOL)isPad
+{
+#ifdef UI_USER_INTERFACE_IDIOM
+    return (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad);
+#else
+    return NO;
+#endif
+}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
@@ -255,8 +265,16 @@
         cell.editingAccessoryType = UITableViewCellAccessoryDetailDisclosureButton;
         [[cell detailTextLabel] setTextColor:[UIColor colorWithRed:0.375713 green:0.443067 blue:0.666667 alpha:1]];
         cell.showsReorderControl = true;
-        [[cell detailTextLabel] setFont:[UIFont boldSystemFontOfSize:22]];
-        [[cell textLabel] setFont:[UIFont boldSystemFontOfSize:28]];
+        
+        if([self isPad])
+        {
+            [[cell detailTextLabel] setFont:[UIFont boldSystemFontOfSize:22]];
+            [[cell textLabel] setFont:[UIFont boldSystemFontOfSize:28]];
+        }
+        else
+        {
+            [[cell detailTextLabel] setFont:[UIFont boldSystemFontOfSize:14]];
+        }
     }
     
     Food* food;
