@@ -51,6 +51,7 @@
 		CE5C185A1537F149006E7398 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5C18591537F149006E7398 /* Default-Portrait@2x~ipad.png */; };
 		CE8CF1491537FCC300A22E4D /* bbqmenu-72.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8CF1471537FCC300A22E4D /* bbqmenu-72.png */; };
 		CE8CF14A1537FCC300A22E4D /* bbqmenu-144.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8CF1481537FCC300A22E4D /* bbqmenu-144.png */; };
+		CEB89B3A15C49B600034C81E /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB89B3815C49B600034C81E /* iRate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,8 @@
 		CE5C18591537F149006E7398 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		CE8CF1471537FCC300A22E4D /* bbqmenu-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bbqmenu-72.png"; sourceTree = SOURCE_ROOT; };
 		CE8CF1481537FCC300A22E4D /* bbqmenu-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bbqmenu-144.png"; sourceTree = SOURCE_ROOT; };
+		CEB89B3815C49B600034C81E /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRate.m; sourceTree = "<group>"; };
+		CEB89B3915C49B600034C81E /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iRate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +201,8 @@
 				4032C30714D1047F0035337E /* NavigationViewController.h */,
 				4032C30814D1047F0035337E /* NavigationViewController.m */,
 				4032C30B14D1047F0035337E /* TakeOrdersTableViewController.h */,
+				CEB89B3815C49B600034C81E /* iRate.m */,
+				CEB89B3915C49B600034C81E /* iRate.h */,
 				4032C30C14D1047F0035337E /* TakeOrdersTableViewController.m */,
 				4032C2D614D102190035337E /* BBQMenuAppDelegate.h */,
 				4032C2D714D102190035337E /* BBQMenuAppDelegate.m */,
@@ -404,6 +409,7 @@
 				408464AB14D6624500519018 /* DataLoader.m in Sources */,
 				404AE07114F9577C002F99F8 /* SqlDataLoader.m in Sources */,
 				404AE07514F9579C002F99F8 /* SqlDataSaver.m in Sources */,
+				CEB89B3A15C49B600034C81E /* iRate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@
 #import "DataLoader.h"
 #import "SqlDataSaver.h"
 #import "SqlDataLoader.h"
+#import "iRate.h"
 
 @implementation BBQMenuAppDelegate
 
@@ -19,9 +20,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSFileManager *fileManager = [NSFileManager defaultManager];//create instance of NSFileManager
+   NSFileManager *fileManager = [NSFileManager defaultManager];//create instance of NSFileManager
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); //create an array and store result of our search for the documents directory in it
-    NSString *documentsDirectory = [paths objectAtIndex:0]; //create NSString object, that holds our exact path to the documents directory
+    NSString *documentsDirectory = [paths objectAtIndex:0]; //create NSString object, that holds our  exact path to the documents directory
     
     NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:@"bbqmenu.sqlite3"];
     
@@ -123,6 +124,18 @@
      Save data if appropriate.
      See also applicationDidEnterBackground:.
      */
+}
+
++(void)initialize
+{
+    [iRate sharedInstance].daysUntilPrompt = 5;
+    [iRate sharedInstance].usesUntilPrompt = 5;
+    [iRate sharedInstance].debug = YES;
+}
+
+-(void)iRateCouldNotConnectToAppStore:(NSError*)error
+{
+    NSLog(@"%@", error);
 }
 
 @end
