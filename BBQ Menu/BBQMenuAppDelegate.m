@@ -130,7 +130,6 @@
 {
     [iRate sharedInstance].daysUntilPrompt = 5;
     [iRate sharedInstance].usesUntilPrompt = 5;
-    [iRate sharedInstance].debug = YES;
 }
 
 -(void)iRateCouldNotConnectToAppStore:(NSError*)error
