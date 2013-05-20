@@ -40,6 +40,7 @@
 		406084CC14D7AA2100587420 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 406084CB14D7AA2100587420 /* Icon.png */; };
 		408464A814D65E5600519018 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 408464A714D65E5600519018 /* Default@2x.png */; };
 		408464AB14D6624500519018 /* DataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 408464AA14D6624500519018 /* DataLoader.m */; };
+		40AF4CC7171B713900550A77 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40AF4CC6171B713900550A77 /* Default-568h@2x.png */; };
 		40FE708314D63B6A00F7095C /* bbqmenu-29.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40FE707E14D63B6A00F7095C /* bbqmenu-29.jpg */; };
 		40FE708414D63B6A00F7095C /* bbqmenu-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 40FE707F14D63B6A00F7095C /* bbqmenu-57.png */; };
 		40FE708514D63B6A00F7095C /* bbqmenu-58.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40FE708014D63B6A00F7095C /* bbqmenu-58.jpg */; };
@@ -114,6 +115,7 @@
 		408464A714D65E5600519018 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		408464A914D6624500519018 /* DataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLoader.h; sourceTree = "<group>"; };
 		408464AA14D6624500519018 /* DataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLoader.m; sourceTree = "<group>"; };
+		40AF4CC6171B713900550A77 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		40FE707E14D63B6A00F7095C /* bbqmenu-29.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bbqmenu-29.jpg"; sourceTree = SOURCE_ROOT; };
 		40FE707F14D63B6A00F7095C /* bbqmenu-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bbqmenu-57.png"; sourceTree = SOURCE_ROOT; };
 		40FE708014D63B6A00F7095C /* bbqmenu-58.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bbqmenu-58.jpg"; sourceTree = SOURCE_ROOT; };
@@ -157,6 +159,7 @@
 		4032C2B814D102180035337E = {
 			isa = PBXGroup;
 			children = (
+				40AF4CC6171B713900550A77 /* Default-568h@2x.png */,
 				CE5C18591537F149006E7398 /* Default-Portrait@2x~ipad.png */,
 				CE5C18571537F13F006E7398 /* Default-Portrait~ipad.png */,
 				404AE07614F95866002F99F8 /* libsqlite3.dylib */,
@@ -362,6 +365,7 @@
 				CE5C185A1537F149006E7398 /* Default-Portrait@2x~ipad.png in Resources */,
 				CE8CF1491537FCC300A22E4D /* bbqmenu-72.png in Resources */,
 				CE8CF14A1537FCC300A22E4D /* bbqmenu-144.png in Resources */,
+				40AF4CC7171B713900550A77 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
