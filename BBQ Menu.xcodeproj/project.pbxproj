@@ -28,6 +28,7 @@
 		4032C31114D1047F0035337E /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30814D1047F0035337E /* NavigationViewController.m */; };
 		4032C31314D1047F0035337E /* TakeOrdersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C30C14D1047F0035337E /* TakeOrdersTableViewController.m */; };
 		4032C31E14D114610035337E /* SummaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4032C31D14D114610035337E /* SummaryTableViewController.m */; };
+		4033EB2B17ED7D910080AC2B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4033EB2A17ED7D910080AC2B /* Images.xcassets */; };
 		404AE07114F9577C002F99F8 /* SqlDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 404AE07014F9577C002F99F8 /* SqlDataLoader.m */; };
 		404AE07514F9579C002F99F8 /* SqlDataSaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 404AE07414F9579C002F99F8 /* SqlDataSaver.m */; };
 		404AE07714F95866002F99F8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 404AE07614F95866002F99F8 /* libsqlite3.dylib */; };
@@ -100,6 +101,7 @@
 		4032C30C14D1047F0035337E /* TakeOrdersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeOrdersTableViewController.m; sourceTree = SOURCE_ROOT; };
 		4032C31C14D114600035337E /* SummaryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryTableViewController.h; sourceTree = "<group>"; };
 		4032C31D14D114610035337E /* SummaryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryTableViewController.m; sourceTree = "<group>"; };
+		4033EB2A17ED7D910080AC2B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		404AE06F14F9577C002F99F8 /* SqlDataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqlDataLoader.h; sourceTree = "<group>"; };
 		404AE07014F9577C002F99F8 /* SqlDataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqlDataLoader.m; sourceTree = "<group>"; };
 		404AE07314F9579C002F99F8 /* SqlDataSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqlDataSaver.h; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				404AE07014F9577C002F99F8 /* SqlDataLoader.m */,
 				404AE07314F9579C002F99F8 /* SqlDataSaver.h */,
 				404AE07414F9579C002F99F8 /* SqlDataSaver.m */,
+				4033EB2A17ED7D910080AC2B /* Images.xcassets */,
 			);
 			path = "BBQ Menu";
 			sourceTree = "<group>";
@@ -318,7 +321,12 @@
 		4032C2BA14D102180035337E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					4032C2C214D102190035337E = {
+						DevelopmentTeam = 6D93JFQ38V;
+					};
+				};
 			};
 			buildConfigurationList = 4032C2BD14D102180035337E /* Build configuration list for PBXProject "BBQ Menu" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -352,6 +360,7 @@
 				40FE708614D63B6A00F7095C /* bbqmenu-114.png in Resources */,
 				40FE708714D63B6A00F7095C /* bbqmenu-512.jpg in Resources */,
 				408464A814D65E5600519018 /* Default@2x.png in Resources */,
+				4033EB2B17ED7D910080AC2B /* Images.xcassets in Resources */,
 				406084CC14D7AA2100587420 /* Icon.png in Resources */,
 				404AE07914F959F0002F99F8 /* bbqmenu.sqlite3 in Resources */,
 				404AE07B14F99336002F99F8 /* Default.png in Resources */,
@@ -475,8 +484,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Martin Dill (992QMAUG8P)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -489,10 +503,15 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -502,15 +521,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Martin Dill";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
@@ -523,12 +551,16 @@
 		4032C2FA14D102190035337E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Martin Dill (992QMAUG8P)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BBQ Menu/BBQ Menu-Prefix.pch";
 				INFOPLIST_FILE = "BBQ Menu/BBQ Menu-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -537,12 +569,16 @@
 		4032C2FB14D102190035337E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BBQ Menu/BBQ Menu-Prefix.pch";
 				INFOPLIST_FILE = "BBQ Menu/BBQ Menu-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

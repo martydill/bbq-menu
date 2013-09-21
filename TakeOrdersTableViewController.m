@@ -247,9 +247,10 @@
     UIStepper* stepper = sender;
     
     UITableViewCell* cell = (UITableViewCell*)[[stepper superview] superview];
+    if([cell class] != [UITableViewCell class])
+        cell = (UITableViewCell*)[cell superview];
     
-    UITableView* table = (UITableView *)[cell superview];
-    NSIndexPath* pathOfTheCell = [table indexPathForCell:cell];
+    NSIndexPath* pathOfTheCell = [self.tableView indexPathForCell:cell];
     NSInteger rowOfTheCell = [pathOfTheCell row];
     
     Food* food;
@@ -259,7 +260,7 @@
         food = [allTableData objectAtIndex:rowOfTheCell];
     
     food.count = [NSNumber numberWithInt:(int)stepper.value];	
-    [table reloadRowsAtIndexPaths:[NSArray arrayWithObject:pathOfTheCell] withRowAnimation:UITableViewRowAnimationNone];
+    [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:pathOfTheCell] withRowAnimation:UITableViewRowAnimationNone];
     food.isModified = true;
 }
 @end
